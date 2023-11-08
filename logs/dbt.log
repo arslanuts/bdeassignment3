@@ -1,0 +1,2812 @@
+[0m22:24:24.092855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087f85d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087609d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087cbe10>]}
+
+
+============================== 22:24:24.097321 | 08b0dc95-222a-42dd-be40-0c4a79dfe324 ==============================
+[0m22:24:24.097321 [info ] [MainThread]: Running with dbt=1.7.0
+[0m22:24:24.097993 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/musadac/Desktop/assignment/logs', 'debug': 'False', 'profiles_dir': '/Users/musadac/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt clean', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:24:24.105303 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m22:24:24.105901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '08b0dc95-222a-42dd-be40-0c4a79dfe324', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10883ac50>]}
+[0m22:24:24.268285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '08b0dc95-222a-42dd-be40-0c4a79dfe324', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108012910>]}
+[0m22:24:24.269865 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+        The default package install path has changed from `dbt_modules` to
+`dbt_packages`.         Please update `clean-targets` in `dbt_project.yml` and
+check `.gitignore` as well.         Or, set `packages-install-path: dbt_modules`
+if you'd like to keep the current value.
+[0m22:24:24.270363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '08b0dc95-222a-42dd-be40-0c4a79dfe324', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10890acd0>]}
+[0m22:24:24.273052 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.25501078, "process_user_time": 2.070308, "process_kernel_time": 0.195175, "process_mem_max_rss": "101748736", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m22:24:24.273727 [debug] [MainThread]: Command `dbt clean` succeeded at 22:24:24.273575 after 0.26 seconds
+[0m22:24:24.274134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108818ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108818b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ae5ed0>]}
+[0m22:24:24.274537 [debug] [MainThread]: Flushing usage events
+[0m22:24:43.149522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1144b12d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1144d4990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1144d5210>]}
+
+
+============================== 22:24:43.153680 | 464d316d-17ed-412f-840b-605f035ad5a0 ==============================
+[0m22:24:43.153680 [info ] [MainThread]: Running with dbt=1.7.0
+[0m22:24:43.154337 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/musadac/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/musadac/Desktop/assignment/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run --full-refresh', 'send_anonymous_usage_stats': 'True'}
+[0m22:24:43.290035 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m22:24:43.290787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114851c50>]}
+[0m22:24:43.457585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114851190>]}
+[0m22:24:43.598175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114421fd0>]}
+[0m22:24:43.598948 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m22:24:43.616953 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m22:24:43.618450 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:24:43.619183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1148b0310>]}
+[0m22:24:44.613361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115045450>]}
+[0m22:24:44.624658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1151fae10>]}
+[0m22:24:44.625322 [info ] [MainThread]: Found 18 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m22:24:44.625874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115044f90>]}
+[0m22:24:44.628224 [info ] [MainThread]: 
+[0m22:24:44.629121 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m22:24:44.630826 [debug] [ThreadPool]: Acquiring new postgres connection 'list_assignment'
+[0m22:24:44.640824 [debug] [ThreadPool]: Using postgres connection "list_assignment"
+[0m22:24:44.641336 [debug] [ThreadPool]: On list_assignment: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "connection_name": "list_assignment"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:24:44.641702 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:24:47.281950 [debug] [ThreadPool]: SQL status: SELECT 5 in 3.0 seconds
+[0m22:24:47.284313 [debug] [ThreadPool]: On list_assignment: Close
+[0m22:24:47.287616 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assignment, now list_assignment_assignment_dev)
+[0m22:24:47.295534 [debug] [ThreadPool]: Using postgres connection "list_assignment_assignment_dev"
+[0m22:24:47.296068 [debug] [ThreadPool]: On list_assignment_assignment_dev: BEGIN
+[0m22:24:47.296484 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:24:49.637431 [debug] [ThreadPool]: SQL status: BEGIN in 2.0 seconds
+[0m22:24:49.638485 [debug] [ThreadPool]: Using postgres connection "list_assignment_assignment_dev"
+[0m22:24:49.639301 [debug] [ThreadPool]: On list_assignment_assignment_dev: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "connection_name": "list_assignment_assignment_dev"} */
+select
+      'assignment' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'assignment_dev'
+    union all
+    select
+      'assignment' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'assignment_dev'
+    union all
+    select
+      'assignment' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'assignment_dev'
+  
+[0m22:24:49.944600 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.0 seconds
+[0m22:24:49.946891 [debug] [ThreadPool]: On list_assignment_assignment_dev: ROLLBACK
+[0m22:24:50.252165 [debug] [ThreadPool]: On list_assignment_assignment_dev: Close
+[0m22:24:50.261182 [debug] [MainThread]: Using postgres connection "master"
+[0m22:24:50.261731 [debug] [MainThread]: On master: BEGIN
+[0m22:24:50.262175 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:24:52.607651 [debug] [MainThread]: SQL status: BEGIN in 2.0 seconds
+[0m22:24:52.608853 [debug] [MainThread]: Using postgres connection "master"
+[0m22:24:52.609886 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:24:52.914297 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m22:24:52.916170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114f83650>]}
+[0m22:24:52.916778 [debug] [MainThread]: On master: ROLLBACK
+[0m22:24:53.222053 [debug] [MainThread]: Using postgres connection "master"
+[0m22:24:53.223064 [debug] [MainThread]: On master: BEGIN
+[0m22:24:54.244548 [debug] [MainThread]: SQL status: BEGIN in 1.0 seconds
+[0m22:24:54.245427 [debug] [MainThread]: On master: COMMIT
+[0m22:24:54.245996 [debug] [MainThread]: Using postgres connection "master"
+[0m22:24:54.246537 [debug] [MainThread]: On master: COMMIT
+[0m22:24:54.553434 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:24:54.554442 [debug] [MainThread]: On master: Close
+[0m22:24:54.556196 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:24:54.556905 [info ] [MainThread]: 
+[0m22:24:54.560453 [debug] [Thread-1 (]: Began running node model.your_project_name.airbnb_listings
+[0m22:24:54.561210 [info ] [Thread-1 (]: 1 of 18 START sql table model assignment_dev.airbnb_listings ................... [RUN]
+[0m22:24:54.562253 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_assignment_assignment_dev, now model.your_project_name.airbnb_listings)
+[0m22:24:54.562828 [debug] [Thread-1 (]: Began compiling node model.your_project_name.airbnb_listings
+[0m22:24:54.570336 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.airbnb_listings"
+[0m22:24:54.571577 [debug] [Thread-1 (]: Timing info for model.your_project_name.airbnb_listings (compile): 22:24:54.563183 => 22:24:54.571245
+[0m22:24:54.572095 [debug] [Thread-1 (]: Began executing node model.your_project_name.airbnb_listings
+[0m22:24:54.619997 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.airbnb_listings"
+[0m22:24:54.621263 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.airbnb_listings"
+[0m22:24:54.621763 [debug] [Thread-1 (]: On model.your_project_name.airbnb_listings: BEGIN
+[0m22:24:54.622192 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:24:57.318622 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:24:57.319689 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.airbnb_listings"
+[0m22:24:57.320637 [debug] [Thread-1 (]: On model.your_project_name.airbnb_listings: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.airbnb_listings"} */
+
+  
+    
+
+  create  table "assignment"."assignment_dev"."airbnb_listings__dbt_tmp"
+  
+  
+    as
+  
+  (
+    CREATE TABLE airbnb_listings (
+    LISTING_ID INT PRIMARY KEY,
+    SCRAPE_ID BIGINT,
+    SCRAPED_DATE DATE,
+    HOST_ID INT,
+    HOST_NAME VARCHAR(255),
+    HOST_SINCE DATE,
+    HOST_IS_SUPERHOST CHAR(1),
+    HOST_NEIGHBOURHOOD VARCHAR(255),
+    LISTING_NEIGHBOURHOOD VARCHAR(255),
+    PROPERTY_TYPE VARCHAR(255),
+    ROOM_TYPE VARCHAR(255),
+    ACCOMMODATES INT,
+    PRICE DECIMAL(10, 2),
+    HAS_AVAILABILITY CHAR(1),
+    AVAILABILITY_30 INT,
+    NUMBER_OF_REVIEWS INT,
+    REVIEW_SCORES_RATING DECIMAL(5, 2),
+    REVIEW_SCORES_ACCURACY INT,
+    REVIEW_SCORES_CLEANLINESS INT,
+    REVIEW_SCORES_CHECKIN INT,
+    REVIEW_SCORES_COMMUNICATION INT,
+    REVIEW_SCORES_VALUE INT
+);
+  );
+  
+[0m22:24:57.627006 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 12:     CREATE TABLE airbnb_listings (
+             ^
+
+[0m22:24:57.628015 [debug] [Thread-1 (]: On model.your_project_name.airbnb_listings: ROLLBACK
+[0m22:24:57.934318 [debug] [Thread-1 (]: Timing info for model.your_project_name.airbnb_listings (execute): 22:24:54.572418 => 22:24:57.933601
+[0m22:24:57.935347 [debug] [Thread-1 (]: On model.your_project_name.airbnb_listings: Close
+[0m22:24:57.946581 [debug] [Thread-1 (]: Database Error in model airbnb_listings (models/raw/airbnb_listings.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE airbnb_listings (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/airbnb_listings.sql
+[0m22:24:57.947456 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114805650>]}
+[0m22:24:57.948291 [error] [Thread-1 (]: 1 of 18 ERROR creating sql table model assignment_dev.airbnb_listings .......... [[31mERROR[0m in 3.39s]
+[0m22:24:57.949161 [debug] [Thread-1 (]: Finished running node model.your_project_name.airbnb_listings
+[0m22:24:57.949776 [debug] [Thread-1 (]: Began running node model.your_project_name.census_stg
+[0m22:24:57.950515 [info ] [Thread-1 (]: 2 of 18 START sql view model assignment_dev.census_stg ......................... [RUN]
+[0m22:24:57.951488 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.airbnb_listings, now model.your_project_name.census_stg)
+[0m22:24:57.952050 [debug] [Thread-1 (]: Began compiling node model.your_project_name.census_stg
+[0m22:24:57.954454 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.census_stg"
+[0m22:24:57.955499 [debug] [Thread-1 (]: Timing info for model.your_project_name.census_stg (compile): 22:24:57.952373 => 22:24:57.955190
+[0m22:24:57.955994 [debug] [Thread-1 (]: Began executing node model.your_project_name.census_stg
+[0m22:24:57.981815 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.census_stg"
+[0m22:24:57.982899 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.census_stg"
+[0m22:24:57.983387 [debug] [Thread-1 (]: On model.your_project_name.census_stg: BEGIN
+[0m22:24:57.983845 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:00.401206 [debug] [Thread-1 (]: SQL status: BEGIN in 2.0 seconds
+[0m22:25:00.402255 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.census_stg"
+[0m22:25:00.403510 [debug] [Thread-1 (]: On model.your_project_name.census_stg: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.census_stg"} */
+
+  create view "assignment"."assignment_dev"."census_stg__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE census_stg (
+    staging_id INT AUTO_INCREMENT PRIMARY KEY,
+    lga_code_2016 INT,
+    tot_p_m INT,
+    tot_p_f INT,
+    tot_p_p INT,
+    age_0_4_yr_m INT,
+    age_0_4_yr_f INT,
+    age_0_4_yr_p INT,
+    age_5_14_yr_m INT,
+    age_5_14_yr_f INT,
+    age_5_14_yr_p INT,
+    age_15_19_yr_m INT,
+    age_15_19_yr_f INT,
+    age_15_19_yr_p INT,
+    age_20_24_yr_m INT,
+    age_20_24_yr_f INT,
+    age_20_24_yr_p INT,
+    age_25_34_yr_m INT,
+    age_25_34_yr_f INT,
+    age_25_34_yr_p INT,
+    age_35_44_yr_m INT,
+    age_35_44_yr_f INT,
+    age_35_44_yr_p INT,
+    age_45_54_yr_m INT,
+    age_45_54_yr_f INT,
+    age_45_54_yr_p INT,
+    age_55_64_yr_m INT,
+    age_55_64_yr_f INT,
+    age_55_64_yr_p INT,
+    age_65_74_yr_m INT,
+    age_65_74_yr_f INT,
+    age_65_74_yr_p INT,
+    age_75_84_yr_m INT,
+    age_75_84_yr_f INT,
+    age_75_84_yr_p INT,
+    age_85ov_m INT,
+    age_85ov_f INT,
+    age_85ov_p INT,
+    counted_census_night_home_m INT,
+    counted_census_night_home_f INT,
+    counted_census_night_home_p INT,
+    count_census_nt_ewhere_aust_m INT,
+    count_census_nt_ewhere_aust_f INT,
+    count_census_nt_ewhere_aust_p INT,
+    indigenous_psns_aboriginal_m INT,
+    indigenous_psns_aboriginal_f INT,
+    indigenous_psns_aboriginal_p INT,
+    indig_psns_torres_strait_is_m INT,
+    indig_psns_torres_strait_is_f INT,
+    indig_psns_torres_strait_is_p INT,
+    indig_bth_abor_torres_st_is_m INT,
+    indig_bth_abor_torres_st_is_f INT,
+    indig_bth_abor_torres_st_is_p INT,
+    indigenous_p_tot_m INT,
+    indigenous_p_tot_f INT,
+    indigenous_p_tot_p INT,
+    birthplace_australia_m INT,
+    birthplace_australia_f INT,
+    birthplace_australia_p INT,
+    birthplace_elsewhere_m INT,
+    birthplace_elsewhere_f INT,
+    birthplace_elsewhere_p INT,
+    lang_spoken_home_eng_only_m INT,
+    lang_spoken_home_eng_only_f INT,
+    lang_spoken_home_eng_only_p INT,
+    lang_spoken_home_oth_lang_m INT,
+    lang_spoken_home_oth_lang_f INT,
+    lang_spoken_home_oth_lang_p INT,
+    australian_citizen_m INT,
+    australian_citizen_f INT,
+    australian_citizen_p INT,
+    age_psns_att_educ_inst_0_4_m INT,
+    age_psns_att_educ_inst_0_4_f INT,
+    age_psns_att_educ_inst_0_4_p INT,
+    age_psns_att_educ_inst_5_14_m INT,
+    age_psns_att_educ_inst_5_14_f INT,
+    age_psns_att_educ_inst_5_14_p INT,
+    age_psns_att_edu_inst_15_19_m INT,
+    age_psns_att_edu_inst_15_19_f INT,
+    age_psns_att_edu_inst_15_19_p INT,
+    age_psns_att_edu_inst_20_24_m INT,
+    age_psns_att_edu_inst_20_24_f INT,
+    age_psns_att_edu_inst_20_24_p INT,
+    age_psns_att_edu_inst_25_ov_m INT,
+    age_psns_att_edu_inst_25_ov_f INT,
+    age_psns_att_edu_inst_25_ov_p INT,
+    high_yr_schl_comp_yr_12_eq_m INT,
+    high_yr_schl_comp_yr_12_eq_f INT,
+    high_yr_schl_comp_yr_12_eq_p INT,
+    high_yr_schl_comp_yr_11_eq_m INT,
+    high_yr_schl_comp_yr_11_eq_f INT,
+    high_yr_schl_comp_yr_11_eq_p INT,
+    high_yr_schl_comp_yr_10_eq_m INT,
+    high_yr_schl_comp_yr_10_eq_f INT,
+    high_yr_schl_comp_yr_10_eq_p INT,
+    high_yr_schl_comp_yr_9_eq_m INT,
+    high_yr_schl_comp_yr_9_eq_f INT,
+    high_yr_schl_comp_yr_9_eq_p INT,
+    high_yr_schl_comp_yr_8_belw_m INT,
+    high_yr_schl_comp_yr_8_belw_f INT,
+    high_yr_schl_comp_yr_8_belw_p INT,
+    high_yr_schl_comp_d_n_g_sch_m INT,
+    high_yr_schl_comp_d_n_g_sch_f INT,
+    high_yr_schl_comp_d_n_g_sch_p INT,
+    count_psns_occ_priv_dwgs_m INT,
+    count_psns_occ_priv_dwgs_f INT,
+    count_psns_occ_priv_dwgs_p INT,
+    count_persons_occ_priv_dwgs_t INT,
+    count_persons_other_dwgs_m INT,
+    count_persons_other_dwgs_f INT,
+    count_persons_other_dwgs_p INT,
+    count_persons_other_dwgs_t INT,
+    median_age_persons DECIMAL(10,2),
+    median_mortgage_repay_monthly DECIMAL(10,2),
+    median_tot_prsnl_inc_weekly DECIMAL(10,2),
+    median_rent_weekly DECIMAL(10,2),
+    median_tot_fam_inc_weekly DECIMAL(10,2),
+    average_num_psns_per_bedroom DECIMAL(10,2),
+    median_tot_hhd_inc_weekly DECIMAL(10,2),
+    average_household_size DECIMAL(10,2),
+    batch_id VARCHAR(50),
+    load_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+  );
+[0m22:25:00.698175 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE census_stg (
+            ^
+
+[0m22:25:00.699207 [debug] [Thread-1 (]: On model.your_project_name.census_stg: ROLLBACK
+[0m22:25:00.939593 [debug] [Thread-1 (]: Timing info for model.your_project_name.census_stg (execute): 22:24:57.956309 => 22:25:00.938863
+[0m22:25:00.940629 [debug] [Thread-1 (]: On model.your_project_name.census_stg: Close
+[0m22:25:00.945117 [debug] [Thread-1 (]: Database Error in model census_stg (models/staging/census_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE census_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/census_stg.sql
+[0m22:25:00.945903 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114495450>]}
+[0m22:25:00.946701 [error] [Thread-1 (]: 2 of 18 ERROR creating sql view model assignment_dev.census_stg ................ [[31mERROR[0m in 2.99s]
+[0m22:25:00.947570 [debug] [Thread-1 (]: Finished running node model.your_project_name.census_stg
+[0m22:25:00.948191 [debug] [Thread-1 (]: Began running node model.your_project_name.dim_census_g01
+[0m22:25:00.948918 [info ] [Thread-1 (]: 3 of 18 START sql view model assignment_dev.dim_census_g01 ..................... [RUN]
+[0m22:25:00.949895 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.census_stg, now model.your_project_name.dim_census_g01)
+[0m22:25:00.950403 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dim_census_g01
+[0m22:25:00.952327 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dim_census_g01"
+[0m22:25:00.953310 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_census_g01 (compile): 22:25:00.950725 => 22:25:00.953006
+[0m22:25:00.953816 [debug] [Thread-1 (]: Began executing node model.your_project_name.dim_census_g01
+[0m22:25:00.959407 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dim_census_g01"
+[0m22:25:00.960406 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_census_g01"
+[0m22:25:00.960901 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g01: BEGIN
+[0m22:25:00.961380 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:04.179538 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:25:04.180553 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_census_g01"
+[0m22:25:04.181315 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g01: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dim_census_g01"} */
+
+  create view "assignment"."assignment_dev"."dim_census_g01__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dim_census_g01 (
+    census_id INT PRIMARY KEY,
+    lga_code_2016 INT,
+    total_population INT,
+    median_age INT,
+    number_of_private_dwellings INT,
+    average_people_per_household DECIMAL(3,1)
+);
+  );
+[0m22:25:04.486965 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dim_census_g01 (
+            ^
+
+[0m22:25:04.487994 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g01: ROLLBACK
+[0m22:25:04.794337 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_census_g01 (execute): 22:25:00.954135 => 22:25:04.793721
+[0m22:25:04.795444 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g01: Close
+[0m22:25:04.799329 [debug] [Thread-1 (]: Database Error in model dim_census_g01 (models/warehouse/dim_census_g01.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_census_g01 (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_census_g01.sql
+[0m22:25:04.799967 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114ef92d0>]}
+[0m22:25:04.800725 [error] [Thread-1 (]: 3 of 18 ERROR creating sql view model assignment_dev.dim_census_g01 ............ [[31mERROR[0m in 3.85s]
+[0m22:25:04.801547 [debug] [Thread-1 (]: Finished running node model.your_project_name.dim_census_g01
+[0m22:25:04.802147 [debug] [Thread-1 (]: Began running node model.your_project_name.dim_census_g02
+[0m22:25:04.802859 [info ] [Thread-1 (]: 4 of 18 START sql view model assignment_dev.dim_census_g02 ..................... [RUN]
+[0m22:25:04.803796 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dim_census_g01, now model.your_project_name.dim_census_g02)
+[0m22:25:04.804306 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dim_census_g02
+[0m22:25:04.806222 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dim_census_g02"
+[0m22:25:04.807261 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_census_g02 (compile): 22:25:04.804629 => 22:25:04.806904
+[0m22:25:04.807786 [debug] [Thread-1 (]: Began executing node model.your_project_name.dim_census_g02
+[0m22:25:04.813784 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dim_census_g02"
+[0m22:25:04.814860 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_census_g02"
+[0m22:25:04.815508 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g02: BEGIN
+[0m22:25:04.816060 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:07.316005 [debug] [Thread-1 (]: SQL status: BEGIN in 2.0 seconds
+[0m22:25:07.317016 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_census_g02"
+[0m22:25:07.317913 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g02: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dim_census_g02"} */
+
+  create view "assignment"."assignment_dev"."dim_census_g02__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dim_census_g02 (
+    census_id INT PRIMARY KEY,
+    lga_code_2016 INT,
+    population_aged_15_and_over INT,
+    employed_population INT,
+    unemployed_population INT,
+    not_in_labor_force_population INT,
+    population_attending_educational_institution INT
+);
+  );
+[0m22:25:07.661163 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dim_census_g02 (
+            ^
+
+[0m22:25:07.662173 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g02: ROLLBACK
+[0m22:25:07.965743 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_census_g02 (execute): 22:25:04.808108 => 22:25:07.964966
+[0m22:25:07.966716 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g02: Close
+[0m22:25:07.970895 [debug] [Thread-1 (]: Database Error in model dim_census_g02 (models/warehouse/dim_census_g02.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_census_g02 (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_census_g02.sql
+[0m22:25:07.971621 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114ecbad0>]}
+[0m22:25:07.972386 [error] [Thread-1 (]: 4 of 18 ERROR creating sql view model assignment_dev.dim_census_g02 ............ [[31mERROR[0m in 3.17s]
+[0m22:25:07.973223 [debug] [Thread-1 (]: Finished running node model.your_project_name.dim_census_g02
+[0m22:25:07.973852 [debug] [Thread-1 (]: Began running node model.your_project_name.dim_host
+[0m22:25:07.974569 [info ] [Thread-1 (]: 5 of 18 START sql view model assignment_dev.dim_host ........................... [RUN]
+[0m22:25:07.975671 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dim_census_g02, now model.your_project_name.dim_host)
+[0m22:25:07.976288 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dim_host
+[0m22:25:07.978289 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dim_host"
+[0m22:25:07.979227 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_host (compile): 22:25:07.976622 => 22:25:07.978926
+[0m22:25:07.979726 [debug] [Thread-1 (]: Began executing node model.your_project_name.dim_host
+[0m22:25:07.985124 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dim_host"
+[0m22:25:07.985941 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_host"
+[0m22:25:07.986436 [debug] [Thread-1 (]: On model.your_project_name.dim_host: BEGIN
+[0m22:25:07.986907 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:10.630321 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:25:10.630879 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_host"
+[0m22:25:10.631342 [debug] [Thread-1 (]: On model.your_project_name.dim_host: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dim_host"} */
+
+  create view "assignment"."assignment_dev"."dim_host__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dim_host (
+    host_id INT PRIMARY KEY,
+    host_name VARCHAR(255),
+    host_since DATE,
+    host_location VARCHAR(255),
+    host_response_time VARCHAR(50),
+    host_response_rate DECIMAL(5,2),
+    host_acceptance_rate DECIMAL(5,2),
+    host_is_superhost BOOLEAN,
+    host_listings_count INT,
+    host_total_listings_count INT,
+    host_verifications TEXT,
+    host_identity_verified BOOLEAN
+);
+  );
+[0m22:25:10.938353 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dim_host (
+            ^
+
+[0m22:25:10.939374 [debug] [Thread-1 (]: On model.your_project_name.dim_host: ROLLBACK
+[0m22:25:11.186028 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_host (execute): 22:25:07.980042 => 22:25:11.185291
+[0m22:25:11.187001 [debug] [Thread-1 (]: On model.your_project_name.dim_host: Close
+[0m22:25:11.191207 [debug] [Thread-1 (]: Database Error in model dim_host (models/warehouse/dim_host.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_host (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_host.sql
+[0m22:25:11.191998 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114f3ad90>]}
+[0m22:25:11.192856 [error] [Thread-1 (]: 5 of 18 ERROR creating sql view model assignment_dev.dim_host .................. [[31mERROR[0m in 3.22s]
+[0m22:25:11.193744 [debug] [Thread-1 (]: Finished running node model.your_project_name.dim_host
+[0m22:25:11.194369 [debug] [Thread-1 (]: Began running node model.your_project_name.dim_lga
+[0m22:25:11.195113 [info ] [Thread-1 (]: 6 of 18 START sql view model assignment_dev.dim_lga ............................ [RUN]
+[0m22:25:11.196061 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dim_host, now model.your_project_name.dim_lga)
+[0m22:25:11.196592 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dim_lga
+[0m22:25:11.198491 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dim_lga"
+[0m22:25:11.199448 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_lga (compile): 22:25:11.196911 => 22:25:11.199130
+[0m22:25:11.199943 [debug] [Thread-1 (]: Began executing node model.your_project_name.dim_lga
+[0m22:25:11.205335 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dim_lga"
+[0m22:25:11.206133 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_lga"
+[0m22:25:11.206618 [debug] [Thread-1 (]: On model.your_project_name.dim_lga: BEGIN
+[0m22:25:11.207082 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:16.262737 [debug] [Thread-1 (]: SQL status: BEGIN in 5.0 seconds
+[0m22:25:16.263558 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_lga"
+[0m22:25:16.264229 [debug] [Thread-1 (]: On model.your_project_name.dim_lga: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dim_lga"} */
+
+  create view "assignment"."assignment_dev"."dim_lga__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dim_lga (
+    lga_id INT PRIMARY KEY,
+    lga_name VARCHAR(255),
+    state VARCHAR(50)
+);
+  );
+[0m22:25:16.570549 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dim_lga (
+            ^
+
+[0m22:25:16.571598 [debug] [Thread-1 (]: On model.your_project_name.dim_lga: ROLLBACK
+[0m22:25:16.877570 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_lga (execute): 22:25:11.200253 => 22:25:16.876979
+[0m22:25:16.878435 [debug] [Thread-1 (]: On model.your_project_name.dim_lga: Close
+[0m22:25:16.882197 [debug] [Thread-1 (]: Database Error in model dim_lga (models/warehouse/dim_lga.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_lga (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_lga.sql
+[0m22:25:16.882853 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114f39910>]}
+[0m22:25:16.883614 [error] [Thread-1 (]: 6 of 18 ERROR creating sql view model assignment_dev.dim_lga ................... [[31mERROR[0m in 5.69s]
+[0m22:25:16.884430 [debug] [Thread-1 (]: Finished running node model.your_project_name.dim_lga
+[0m22:25:16.885029 [debug] [Thread-1 (]: Began running node model.your_project_name.dim_property
+[0m22:25:16.885749 [info ] [Thread-1 (]: 7 of 18 START sql view model assignment_dev.dim_property ....................... [RUN]
+[0m22:25:16.886658 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dim_lga, now model.your_project_name.dim_property)
+[0m22:25:16.887163 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dim_property
+[0m22:25:16.889072 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dim_property"
+[0m22:25:16.889987 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_property (compile): 22:25:16.887480 => 22:25:16.889689
+[0m22:25:16.890478 [debug] [Thread-1 (]: Began executing node model.your_project_name.dim_property
+[0m22:25:16.896228 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dim_property"
+[0m22:25:16.897160 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_property"
+[0m22:25:16.897650 [debug] [Thread-1 (]: On model.your_project_name.dim_property: BEGIN
+[0m22:25:16.898120 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:19.438828 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:25:19.439898 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_property"
+[0m22:25:19.440785 [debug] [Thread-1 (]: On model.your_project_name.dim_property: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dim_property"} */
+
+  create view "assignment"."assignment_dev"."dim_property__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dim_property (
+    property_id INT PRIMARY KEY,
+    property_name VARCHAR(255),
+    property_type VARCHAR(50),
+    room_type VARCHAR(50),
+    accommodate INT,
+    bathrooms DECIMAL(3,1),
+    bedrooms INT,
+    beds INT,
+    amenities TEXT,
+    price DECIMAL(10,2),
+    security_deposit DECIMAL(10,2),
+    cleaning_fee DECIMAL(10,2),
+    property_rules TEXT,
+    minimum_nights INT,
+    maximum_nights INT,
+    property_review_score DECIMAL(3,2),
+    property_reviews_count INT
+);
+  );
+[0m22:25:19.744767 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dim_property (
+            ^
+
+[0m22:25:19.745722 [debug] [Thread-1 (]: On model.your_project_name.dim_property: ROLLBACK
+[0m22:25:20.052282 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_property (execute): 22:25:16.890792 => 22:25:20.051565
+[0m22:25:20.053256 [debug] [Thread-1 (]: On model.your_project_name.dim_property: Close
+[0m22:25:20.057454 [debug] [Thread-1 (]: Database Error in model dim_property (models/warehouse/dim_property.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_property (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_property.sql
+[0m22:25:20.058198 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115060410>]}
+[0m22:25:20.059192 [error] [Thread-1 (]: 7 of 18 ERROR creating sql view model assignment_dev.dim_property .............. [[31mERROR[0m in 3.17s]
+[0m22:25:20.060047 [debug] [Thread-1 (]: Finished running node model.your_project_name.dim_property
+[0m22:25:20.060772 [debug] [Thread-1 (]: Began running node model.your_project_name.dim_suburb
+[0m22:25:20.061515 [info ] [Thread-1 (]: 8 of 18 START sql view model assignment_dev.dim_suburb ......................... [RUN]
+[0m22:25:20.062498 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dim_property, now model.your_project_name.dim_suburb)
+[0m22:25:20.063025 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dim_suburb
+[0m22:25:20.064940 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dim_suburb"
+[0m22:25:20.065824 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_suburb (compile): 22:25:20.063344 => 22:25:20.065531
+[0m22:25:20.066311 [debug] [Thread-1 (]: Began executing node model.your_project_name.dim_suburb
+[0m22:25:20.072889 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dim_suburb"
+[0m22:25:20.073730 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_suburb"
+[0m22:25:20.074235 [debug] [Thread-1 (]: On model.your_project_name.dim_suburb: BEGIN
+[0m22:25:20.074723 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:22.714181 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:25:22.715188 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_suburb"
+[0m22:25:22.715986 [debug] [Thread-1 (]: On model.your_project_name.dim_suburb: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dim_suburb"} */
+
+  create view "assignment"."assignment_dev"."dim_suburb__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dim_suburb (
+    suburb_id INT PRIMARY KEY,
+    suburb_name VARCHAR(255),
+    state VARCHAR(50),
+    postcode VARCHAR(10),
+    latitude DECIMAL(9,6),
+    longitude DECIMAL(9,6)
+);
+  );
+[0m22:25:22.955638 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dim_suburb (
+            ^
+
+[0m22:25:22.956700 [debug] [Thread-1 (]: On model.your_project_name.dim_suburb: ROLLBACK
+[0m22:25:23.226442 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_suburb (execute): 22:25:20.066623 => 22:25:23.225694
+[0m22:25:23.227425 [debug] [Thread-1 (]: On model.your_project_name.dim_suburb: Close
+[0m22:25:23.231293 [debug] [Thread-1 (]: Database Error in model dim_suburb (models/warehouse/dim_suburb.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_suburb (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_suburb.sql
+[0m22:25:23.231931 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115387dd0>]}
+[0m22:25:23.232686 [error] [Thread-1 (]: 8 of 18 ERROR creating sql view model assignment_dev.dim_suburb ................ [[31mERROR[0m in 3.17s]
+[0m22:25:23.233498 [debug] [Thread-1 (]: Finished running node model.your_project_name.dim_suburb
+[0m22:25:23.234092 [debug] [Thread-1 (]: Began running node model.your_project_name.dm_host_neighbourhood
+[0m22:25:23.234823 [info ] [Thread-1 (]: 9 of 18 START sql view model assignment_dev.dm_host_neighbourhood .............. [RUN]
+[0m22:25:23.235746 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dim_suburb, now model.your_project_name.dm_host_neighbourhood)
+[0m22:25:23.236257 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dm_host_neighbourhood
+[0m22:25:23.238194 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dm_host_neighbourhood"
+[0m22:25:23.239277 [debug] [Thread-1 (]: Timing info for model.your_project_name.dm_host_neighbourhood (compile): 22:25:23.236573 => 22:25:23.238967
+[0m22:25:23.239778 [debug] [Thread-1 (]: Began executing node model.your_project_name.dm_host_neighbourhood
+[0m22:25:23.245407 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dm_host_neighbourhood"
+[0m22:25:23.246431 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dm_host_neighbourhood"
+[0m22:25:23.246943 [debug] [Thread-1 (]: On model.your_project_name.dm_host_neighbourhood: BEGIN
+[0m22:25:23.247420 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:26.093221 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:25:26.094301 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dm_host_neighbourhood"
+[0m22:25:26.095012 [debug] [Thread-1 (]: On model.your_project_name.dm_host_neighbourhood: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dm_host_neighbourhood"} */
+
+  create view "assignment"."assignment_dev"."dm_host_neighbourhood__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dm_host_neighbourhood (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    host_id INT,
+    neighbourhood_name VARCHAR(255),
+    total_listings_by_host INT,
+    average_listing_price DECIMAL(10,2),
+    average_host_rating DECIMAL(3,2),
+    FOREIGN KEY (host_id) REFERENCES dim_host(host_id)
+);
+  );
+[0m22:25:26.337849 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dm_host_neighbourhood (
+            ^
+
+[0m22:25:26.338902 [debug] [Thread-1 (]: On model.your_project_name.dm_host_neighbourhood: ROLLBACK
+[0m22:25:26.581912 [debug] [Thread-1 (]: Timing info for model.your_project_name.dm_host_neighbourhood (execute): 22:25:23.240113 => 22:25:26.581242
+[0m22:25:26.582874 [debug] [Thread-1 (]: On model.your_project_name.dm_host_neighbourhood: Close
+[0m22:25:26.586981 [debug] [Thread-1 (]: Database Error in model dm_host_neighbourhood (models/datamart/dm_host_neighbourhood.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dm_host_neighbourhood (
+              ^
+  compiled Code at target/run/your_project_name/models/datamart/dm_host_neighbourhood.sql
+[0m22:25:26.587680 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1151faf50>]}
+[0m22:25:26.588426 [error] [Thread-1 (]: 9 of 18 ERROR creating sql view model assignment_dev.dm_host_neighbourhood ..... [[31mERROR[0m in 3.35s]
+[0m22:25:26.589248 [debug] [Thread-1 (]: Finished running node model.your_project_name.dm_host_neighbourhood
+[0m22:25:26.589851 [debug] [Thread-1 (]: Began running node model.your_project_name.dm_listing_neighbourhood
+[0m22:25:26.590480 [info ] [Thread-1 (]: 10 of 18 START sql view model assignment_dev.dm_listing_neighbourhood .......... [RUN]
+[0m22:25:26.591535 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dm_host_neighbourhood, now model.your_project_name.dm_listing_neighbourhood)
+[0m22:25:26.592161 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dm_listing_neighbourhood
+[0m22:25:26.594143 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dm_listing_neighbourhood"
+[0m22:25:26.595113 [debug] [Thread-1 (]: Timing info for model.your_project_name.dm_listing_neighbourhood (compile): 22:25:26.592512 => 22:25:26.594753
+[0m22:25:26.595652 [debug] [Thread-1 (]: Began executing node model.your_project_name.dm_listing_neighbourhood
+[0m22:25:26.601129 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dm_listing_neighbourhood"
+[0m22:25:26.602004 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dm_listing_neighbourhood"
+[0m22:25:26.602513 [debug] [Thread-1 (]: On model.your_project_name.dm_listing_neighbourhood: BEGIN
+[0m22:25:26.602990 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:29.139277 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:25:29.140453 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dm_listing_neighbourhood"
+[0m22:25:29.141458 [debug] [Thread-1 (]: On model.your_project_name.dm_listing_neighbourhood: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dm_listing_neighbourhood"} */
+
+  create view "assignment"."assignment_dev"."dm_listing_neighbourhood__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dm_listing_neighbourhood (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    neighbourhood_name VARCHAR(255),
+    number_of_listings INT,
+    average_price DECIMAL(10,2),
+    average_review_score DECIMAL(3,2),
+    total_availability INT
+);
+  );
+[0m22:25:29.384411 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dm_listing_neighbourhood (
+            ^
+
+[0m22:25:29.385423 [debug] [Thread-1 (]: On model.your_project_name.dm_listing_neighbourhood: ROLLBACK
+[0m22:25:29.678840 [debug] [Thread-1 (]: Timing info for model.your_project_name.dm_listing_neighbourhood (execute): 22:25:26.595967 => 22:25:29.678239
+[0m22:25:29.679739 [debug] [Thread-1 (]: On model.your_project_name.dm_listing_neighbourhood: Close
+[0m22:25:29.683554 [debug] [Thread-1 (]: Database Error in model dm_listing_neighbourhood (models/datamart/dm_listing_neighbourhood.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dm_listing_neighbourhood (
+              ^
+  compiled Code at target/run/your_project_name/models/datamart/dm_listing_neighbourhood.sql
+[0m22:25:29.684159 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11521c8d0>]}
+[0m22:25:29.684917 [error] [Thread-1 (]: 10 of 18 ERROR creating sql view model assignment_dev.dm_listing_neighbourhood . [[31mERROR[0m in 3.09s]
+[0m22:25:29.685735 [debug] [Thread-1 (]: Finished running node model.your_project_name.dm_listing_neighbourhood
+[0m22:25:29.686331 [debug] [Thread-1 (]: Began running node model.your_project_name.dm_property_type
+[0m22:25:29.687032 [info ] [Thread-1 (]: 11 of 18 START sql view model assignment_dev.dm_property_type .................. [RUN]
+[0m22:25:29.687941 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dm_listing_neighbourhood, now model.your_project_name.dm_property_type)
+[0m22:25:29.688439 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dm_property_type
+[0m22:25:29.690323 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dm_property_type"
+[0m22:25:29.691253 [debug] [Thread-1 (]: Timing info for model.your_project_name.dm_property_type (compile): 22:25:29.688755 => 22:25:29.690944
+[0m22:25:29.691901 [debug] [Thread-1 (]: Began executing node model.your_project_name.dm_property_type
+[0m22:25:29.697724 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dm_property_type"
+[0m22:25:29.698775 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dm_property_type"
+[0m22:25:29.699415 [debug] [Thread-1 (]: On model.your_project_name.dm_property_type: BEGIN
+[0m22:25:29.699999 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:32.373131 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:25:32.374117 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dm_property_type"
+[0m22:25:32.374820 [debug] [Thread-1 (]: On model.your_project_name.dm_property_type: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dm_property_type"} */
+
+  create view "assignment"."assignment_dev"."dm_property_type__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dm_property_type (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    property_type VARCHAR(255),
+    count_properties INT,
+    average_price DECIMAL(10,2),
+    average_occupancy_rate DECIMAL(5,2)
+);
+  );
+[0m22:25:32.646810 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dm_property_type (
+            ^
+
+[0m22:25:32.647494 [debug] [Thread-1 (]: On model.your_project_name.dm_property_type: ROLLBACK
+[0m22:25:32.953848 [debug] [Thread-1 (]: Timing info for model.your_project_name.dm_property_type (execute): 22:25:29.692232 => 22:25:32.953476
+[0m22:25:32.954416 [debug] [Thread-1 (]: On model.your_project_name.dm_property_type: Close
+[0m22:25:32.957196 [debug] [Thread-1 (]: Database Error in model dm_property_type (models/datamart/dm_property_type.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dm_property_type (
+              ^
+  compiled Code at target/run/your_project_name/models/datamart/dm_property_type.sql
+[0m22:25:32.957705 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11536d8d0>]}
+[0m22:25:32.958416 [error] [Thread-1 (]: 11 of 18 ERROR creating sql view model assignment_dev.dm_property_type ......... [[31mERROR[0m in 3.27s]
+[0m22:25:32.959113 [debug] [Thread-1 (]: Finished running node model.your_project_name.dm_property_type
+[0m22:25:32.959667 [debug] [Thread-1 (]: Began running node model.your_project_name.facts_listings
+[0m22:25:32.960246 [info ] [Thread-1 (]: 12 of 18 START sql view model assignment_dev.facts_listings .................... [RUN]
+[0m22:25:32.960979 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dm_property_type, now model.your_project_name.facts_listings)
+[0m22:25:32.961392 [debug] [Thread-1 (]: Began compiling node model.your_project_name.facts_listings
+[0m22:25:32.962979 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.facts_listings"
+[0m22:25:32.963701 [debug] [Thread-1 (]: Timing info for model.your_project_name.facts_listings (compile): 22:25:32.961650 => 22:25:32.963460
+[0m22:25:32.964109 [debug] [Thread-1 (]: Began executing node model.your_project_name.facts_listings
+[0m22:25:32.968307 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.facts_listings"
+[0m22:25:32.968965 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.facts_listings"
+[0m22:25:32.969347 [debug] [Thread-1 (]: On model.your_project_name.facts_listings: BEGIN
+[0m22:25:32.969710 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:35.445214 [debug] [Thread-1 (]: SQL status: BEGIN in 2.0 seconds
+[0m22:25:35.446197 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.facts_listings"
+[0m22:25:35.446919 [debug] [Thread-1 (]: On model.your_project_name.facts_listings: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.facts_listings"} */
+
+  create view "assignment"."assignment_dev"."facts_listings__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE facts_listings (
+    listing_id INT PRIMARY KEY,
+    date DATE,
+    property_id INT,
+    host_id INT,
+    suburb_id INT,
+    lga_id INT,
+    census_g01_id INT,
+    census_g02_id INT,
+    number_of_bookings INT,
+    total_revenue DECIMAL(18,2),
+    average_rating DECIMAL(3,2),
+    number_of_reviews INT,
+    FOREIGN KEY (property_id) REFERENCES dim_property(property_id),
+    FOREIGN KEY (host_id) REFERENCES dim_host(host_id),
+    FOREIGN KEY (suburb_id) REFERENCES dim_suburb(suburb_id),
+    FOREIGN KEY (lga_id) REFERENCES dim_lga(lga_id),
+    FOREIGN KEY (census_g01_id) REFERENCES dim_census_g01(census_id),
+    FOREIGN KEY (census_g02_id) REFERENCES dim_census_g02(census_id)
+);
+  );
+[0m22:25:35.719204 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE facts_listings (
+            ^
+
+[0m22:25:35.720255 [debug] [Thread-1 (]: On model.your_project_name.facts_listings: ROLLBACK
+[0m22:25:36.026195 [debug] [Thread-1 (]: Timing info for model.your_project_name.facts_listings (execute): 22:25:32.964346 => 22:25:36.025712
+[0m22:25:36.027017 [debug] [Thread-1 (]: On model.your_project_name.facts_listings: Close
+[0m22:25:36.030694 [debug] [Thread-1 (]: Database Error in model facts_listings (models/warehouse/facts_listings.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE facts_listings (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/facts_listings.sql
+[0m22:25:36.031330 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11528bc90>]}
+[0m22:25:36.032076 [error] [Thread-1 (]: 12 of 18 ERROR creating sql view model assignment_dev.facts_listings ........... [[31mERROR[0m in 3.07s]
+[0m22:25:36.032888 [debug] [Thread-1 (]: Finished running node model.your_project_name.facts_listings
+[0m22:25:36.033478 [debug] [Thread-1 (]: Began running node model.your_project_name.lga_stg
+[0m22:25:36.034161 [info ] [Thread-1 (]: 13 of 18 START sql view model assignment_dev.lga_stg ........................... [RUN]
+[0m22:25:36.035030 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.facts_listings, now model.your_project_name.lga_stg)
+[0m22:25:36.035529 [debug] [Thread-1 (]: Began compiling node model.your_project_name.lga_stg
+[0m22:25:36.037427 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.lga_stg"
+[0m22:25:36.038316 [debug] [Thread-1 (]: Timing info for model.your_project_name.lga_stg (compile): 22:25:36.035848 => 22:25:36.038023
+[0m22:25:36.038799 [debug] [Thread-1 (]: Began executing node model.your_project_name.lga_stg
+[0m22:25:36.044237 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.lga_stg"
+[0m22:25:36.045167 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.lga_stg"
+[0m22:25:36.045675 [debug] [Thread-1 (]: On model.your_project_name.lga_stg: BEGIN
+[0m22:25:36.046132 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:38.688881 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:25:38.689967 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.lga_stg"
+[0m22:25:38.690850 [debug] [Thread-1 (]: On model.your_project_name.lga_stg: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.lga_stg"} */
+
+  create view "assignment"."assignment_dev"."lga_stg__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE lga_stg (
+    staging_id INT AUTO_INCREMENT PRIMARY KEY,
+    lga_code INT,
+    lga_name VARCHAR(255),
+    batch_id VARCHAR(50),
+    load_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+  );
+[0m22:25:38.933042 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE lga_stg (
+            ^
+
+[0m22:25:38.934114 [debug] [Thread-1 (]: On model.your_project_name.lga_stg: ROLLBACK
+[0m22:25:39.201461 [debug] [Thread-1 (]: Timing info for model.your_project_name.lga_stg (execute): 22:25:36.039118 => 22:25:39.200746
+[0m22:25:39.202428 [debug] [Thread-1 (]: On model.your_project_name.lga_stg: Close
+[0m22:25:39.206628 [debug] [Thread-1 (]: Database Error in model lga_stg (models/staging/lga_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE lga_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/lga_stg.sql
+[0m22:25:39.207366 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1152dbbd0>]}
+[0m22:25:39.208300 [error] [Thread-1 (]: 13 of 18 ERROR creating sql view model assignment_dev.lga_stg .................. [[31mERROR[0m in 3.17s]
+[0m22:25:39.209189 [debug] [Thread-1 (]: Finished running node model.your_project_name.lga_stg
+[0m22:25:39.209849 [debug] [Thread-1 (]: Began running node model.your_project_name.lga_suburb_mapping
+[0m22:25:39.210678 [info ] [Thread-1 (]: 14 of 18 START sql table model assignment_dev.lga_suburb_mapping ............... [RUN]
+[0m22:25:39.211640 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.lga_stg, now model.your_project_name.lga_suburb_mapping)
+[0m22:25:39.212173 [debug] [Thread-1 (]: Began compiling node model.your_project_name.lga_suburb_mapping
+[0m22:25:39.214085 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.lga_suburb_mapping"
+[0m22:25:39.214991 [debug] [Thread-1 (]: Timing info for model.your_project_name.lga_suburb_mapping (compile): 22:25:39.212490 => 22:25:39.214693
+[0m22:25:39.215483 [debug] [Thread-1 (]: Began executing node model.your_project_name.lga_suburb_mapping
+[0m22:25:39.222398 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.lga_suburb_mapping"
+[0m22:25:39.223382 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.lga_suburb_mapping"
+[0m22:25:39.223915 [debug] [Thread-1 (]: On model.your_project_name.lga_suburb_mapping: BEGIN
+[0m22:25:39.224505 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:41.862671 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:25:41.863294 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.lga_suburb_mapping"
+[0m22:25:41.863828 [debug] [Thread-1 (]: On model.your_project_name.lga_suburb_mapping: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.lga_suburb_mapping"} */
+
+  
+    
+
+  create  table "assignment"."assignment_dev"."lga_suburb_mapping__dbt_tmp"
+  
+  
+    as
+  
+  (
+    CREATE TABLE lga_suburb_mapping (
+    LGA_CODE INT PRIMARY KEY,
+    LGA_NAME VARCHAR(255)
+);
+  );
+  
+[0m22:25:42.170251 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 12:     CREATE TABLE lga_suburb_mapping (
+             ^
+
+[0m22:25:42.171417 [debug] [Thread-1 (]: On model.your_project_name.lga_suburb_mapping: ROLLBACK
+[0m22:25:42.410680 [debug] [Thread-1 (]: Timing info for model.your_project_name.lga_suburb_mapping (execute): 22:25:39.215795 => 22:25:42.410067
+[0m22:25:42.411646 [debug] [Thread-1 (]: On model.your_project_name.lga_suburb_mapping: Close
+[0m22:25:42.415698 [debug] [Thread-1 (]: Database Error in model lga_suburb_mapping (models/raw/lga_suburb_mapping.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE lga_suburb_mapping (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/lga_suburb_mapping.sql
+[0m22:25:42.416317 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114f07890>]}
+[0m22:25:42.417076 [error] [Thread-1 (]: 14 of 18 ERROR creating sql table model assignment_dev.lga_suburb_mapping ...... [[31mERROR[0m in 3.21s]
+[0m22:25:42.417913 [debug] [Thread-1 (]: Finished running node model.your_project_name.lga_suburb_mapping
+[0m22:25:42.418510 [debug] [Thread-1 (]: Began running node model.your_project_name.property_stg
+[0m22:25:42.419211 [info ] [Thread-1 (]: 15 of 18 START sql view model assignment_dev.property_stg ...................... [RUN]
+[0m22:25:42.420159 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.lga_suburb_mapping, now model.your_project_name.property_stg)
+[0m22:25:42.420693 [debug] [Thread-1 (]: Began compiling node model.your_project_name.property_stg
+[0m22:25:42.422482 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.property_stg"
+[0m22:25:42.423343 [debug] [Thread-1 (]: Timing info for model.your_project_name.property_stg (compile): 22:25:42.421007 => 22:25:42.423070
+[0m22:25:42.423812 [debug] [Thread-1 (]: Began executing node model.your_project_name.property_stg
+[0m22:25:42.428861 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.property_stg"
+[0m22:25:42.429695 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.property_stg"
+[0m22:25:42.430129 [debug] [Thread-1 (]: On model.your_project_name.property_stg: BEGIN
+[0m22:25:42.430534 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:44.934845 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:25:44.935948 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.property_stg"
+[0m22:25:44.936862 [debug] [Thread-1 (]: On model.your_project_name.property_stg: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.property_stg"} */
+
+  create view "assignment"."assignment_dev"."property_stg__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE property_stg (
+    staging_id INT AUTO_INCREMENT PRIMARY KEY,
+    listing_id INT,
+    scrape_id BIGINT,
+    scraped_date DATE,
+    host_id BIGINT,
+    host_name VARCHAR(255),
+    host_since DATE,
+    host_is_superhost CHAR(1),
+    host_neighbourhood VARCHAR(255),
+    listing_neighbourhood VARCHAR(255),
+    property_type VARCHAR(255),
+    room_type VARCHAR(255),
+    accommodates INT,
+    price DECIMAL(10,2),
+    has_availability CHAR(1),
+    availability_30 INT,
+    number_of_reviews INT,
+    review_scores_rating DECIMAL(4,1),
+    review_scores_accuracy INT,
+    review_scores_cleanliness INT,
+    review_scores_checkin INT,
+    review_scores_communication INT,
+    review_scores_value INT,
+    batch_id VARCHAR(50),
+    load_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+  );
+[0m22:25:45.242383 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE property_stg (
+            ^
+
+[0m22:25:45.243378 [debug] [Thread-1 (]: On model.your_project_name.property_stg: ROLLBACK
+[0m22:25:45.549653 [debug] [Thread-1 (]: Timing info for model.your_project_name.property_stg (execute): 22:25:42.424132 => 22:25:45.549057
+[0m22:25:45.550565 [debug] [Thread-1 (]: On model.your_project_name.property_stg: Close
+[0m22:25:45.554408 [debug] [Thread-1 (]: Database Error in model property_stg (models/staging/property_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE property_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/property_stg.sql
+[0m22:25:45.555030 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114eb5090>]}
+[0m22:25:45.555778 [error] [Thread-1 (]: 15 of 18 ERROR creating sql view model assignment_dev.property_stg ............. [[31mERROR[0m in 3.14s]
+[0m22:25:45.556627 [debug] [Thread-1 (]: Finished running node model.your_project_name.property_stg
+[0m22:25:45.557232 [debug] [Thread-1 (]: Began running node model.your_project_name.suburb_stg
+[0m22:25:45.558169 [info ] [Thread-1 (]: 16 of 18 START sql view model assignment_dev.suburb_stg ........................ [RUN]
+[0m22:25:45.559199 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.property_stg, now model.your_project_name.suburb_stg)
+[0m22:25:45.559716 [debug] [Thread-1 (]: Began compiling node model.your_project_name.suburb_stg
+[0m22:25:45.561613 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.suburb_stg"
+[0m22:25:45.562532 [debug] [Thread-1 (]: Timing info for model.your_project_name.suburb_stg (compile): 22:25:45.560033 => 22:25:45.562235
+[0m22:25:45.563018 [debug] [Thread-1 (]: Began executing node model.your_project_name.suburb_stg
+[0m22:25:45.568366 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.suburb_stg"
+[0m22:25:45.569220 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.suburb_stg"
+[0m22:25:45.569748 [debug] [Thread-1 (]: On model.your_project_name.suburb_stg: BEGIN
+[0m22:25:45.570216 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:47.841718 [debug] [Thread-1 (]: SQL status: BEGIN in 2.0 seconds
+[0m22:25:47.842706 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.suburb_stg"
+[0m22:25:47.843722 [debug] [Thread-1 (]: On model.your_project_name.suburb_stg: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.suburb_stg"} */
+
+  create view "assignment"."assignment_dev"."suburb_stg__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE suburb_stg (
+    staging_id INT AUTO_INCREMENT PRIMARY KEY,
+    suburb_id INT,
+    suburb_name VARCHAR(255),
+    batch_id VARCHAR(50),
+    load_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+  );
+[0m22:25:48.083354 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE suburb_stg (
+            ^
+
+[0m22:25:48.084374 [debug] [Thread-1 (]: On model.your_project_name.suburb_stg: ROLLBACK
+[0m22:25:48.324177 [debug] [Thread-1 (]: Timing info for model.your_project_name.suburb_stg (execute): 22:25:45.563330 => 22:25:48.323446
+[0m22:25:48.325351 [debug] [Thread-1 (]: On model.your_project_name.suburb_stg: Close
+[0m22:25:48.329561 [debug] [Thread-1 (]: Database Error in model suburb_stg (models/staging/suburb_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE suburb_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/suburb_stg.sql
+[0m22:25:48.330248 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115227690>]}
+[0m22:25:48.330995 [error] [Thread-1 (]: 16 of 18 ERROR creating sql view model assignment_dev.suburb_stg ............... [[31mERROR[0m in 2.77s]
+[0m22:25:48.331818 [debug] [Thread-1 (]: Finished running node model.your_project_name.suburb_stg
+[0m22:25:48.332419 [debug] [Thread-1 (]: Began running node model.your_project_name.upload_census_g01_data
+[0m22:25:48.333116 [info ] [Thread-1 (]: 17 of 18 START sql table model assignment_dev.upload_census_g01_data ........... [RUN]
+[0m22:25:48.334036 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.suburb_stg, now model.your_project_name.upload_census_g01_data)
+[0m22:25:48.334585 [debug] [Thread-1 (]: Began compiling node model.your_project_name.upload_census_g01_data
+[0m22:25:48.336531 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.upload_census_g01_data"
+[0m22:25:48.337451 [debug] [Thread-1 (]: Timing info for model.your_project_name.upload_census_g01_data (compile): 22:25:48.334903 => 22:25:48.337147
+[0m22:25:48.337945 [debug] [Thread-1 (]: Began executing node model.your_project_name.upload_census_g01_data
+[0m22:25:48.343500 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.upload_census_g01_data"
+[0m22:25:48.344456 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.upload_census_g01_data"
+[0m22:25:48.344968 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g01_data: BEGIN
+[0m22:25:48.345442 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:50.976615 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:25:50.977749 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.upload_census_g01_data"
+[0m22:25:50.978629 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g01_data: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.upload_census_g01_data"} */
+
+  
+    
+
+  create  table "assignment"."assignment_dev"."upload_census_g01_data__dbt_tmp"
+  
+  
+    as
+  
+  (
+    CREATE TABLE upload_census_g01_data (
+    LGA_CODE_2016 INT PRIMARY KEY,
+    Tot_P_M INT,
+    Tot_P_F INT,
+    Tot_P_P INT,
+    Age_0_4_yr_M INT,
+    Age_0_4_yr_F INT,
+    Age_0_4_yr_P INT,
+    Age_5_14_yr_M INT,
+    Age_5_14_yr_F INT,
+    Age_5_14_yr_P INT,
+    Age_15_19_yr_M INT,
+    Age_15_19_yr_F INT,
+    Age_15_19_yr_P INT,
+    Age_20_24_yr_M INT,
+    Age_20_24_yr_F INT,
+    Age_20_24_yr_P INT,
+    Age_25_34_yr_M INT,
+    Age_25_34_yr_F INT,
+    Age_25_34_yr_P INT,
+    Age_35_44_yr_M INT,
+    Age_35_44_yr_F INT,
+    Age_35_44_yr_P INT,
+    Age_45_54_yr_M INT,
+    Age_45_54_yr_F INT,
+    Age_45_54_yr_P INT,
+    Age_55_64_yr_M INT,
+    Age_55_64_yr_F INT,
+    Age_55_64_yr_P INT,
+    Age_65_74_yr_M INT,
+    Age_65_74_yr_F INT,
+    Age_65_74_yr_P INT,
+    Age_75_84_yr_M INT,
+    Age_75_84_yr_F INT,
+    Age_75_84_yr_P INT,
+    Age_85ov_M INT,
+    Age_85ov_F INT,
+    Age_85ov_P INT,
+    Counted_Census_Night_home_M INT,
+    Counted_Census_Night_home_F INT,
+    Counted_Census_Night_home_P INT,
+    Count_Census_Nt_Ewhere_Aust_M INT,
+    Count_Census_Nt_Ewhere_Aust_F INT,
+    Count_Census_Nt_Ewhere_Aust_P INT,
+    Indigenous_psns_Aboriginal_M INT,
+    Indigenous_psns_Aboriginal_F INT,
+    Indigenous_psns_Aboriginal_P INT,
+    Indig_psns_Torres_Strait_Is_M INT,
+    Indig_psns_Torres_Strait_Is_F INT,
+    Indig_psns_Torres_Strait_Is_P INT,
+    Indig_Bth_Abor_Torres_St_Is_M INT,
+    Indig_Bth_Abor_Torres_St_Is_F INT,
+    Indig_Bth_Abor_Torres_St_Is_P INT,
+    Indigenous_P_Tot_M INT,
+    Indigenous_P_Tot_F INT,
+    Indigenous_P_Tot_P INT,
+    Birthplace_Australia_M INT,
+    Birthplace_Australia_F INT,
+    Birthplace_Australia_P INT,
+    Birthplace_Elsewhere_M INT,
+    Birthplace_Elsewhere_F INT,
+    Birthplace_Elsewhere_P INT,
+    Lang_spoken_home_Eng_only_M INT,
+    Lang_spoken_home_Eng_only_F INT,
+    Lang_spoken_home_Eng_only_P INT,
+    Lang_spoken_home_Oth_Lang_M INT,
+    Lang_spoken_home_Oth_Lang_F INT,
+    Lang_spoken_home_Oth_Lang_P INT,
+    Australian_citizen_M INT,
+    Australian_citizen_F INT,
+    Australian_citizen_P INT,
+    Age_psns_att_educ_inst_0_4_M INT,
+    Age_psns_att_educ_inst_0_4_F INT,
+    Age_psns_att_educ_inst_0_4_P INT,
+    Age_psns_att_educ_inst_5_14_M INT,
+    Age_psns_att_educ_inst_5_14_F INT,
+    Age_psns_att_educ_inst_5_14_P INT,
+    Age_psns_att_edu_inst_15_19_M INT,
+    Age_psns_att_edu_inst_15_19_F INT,
+    Age_psns_att_edu_inst_15_19_P INT,
+    Age_psns_att_edu_inst_20_24_M INT,
+    Age_psns_att_edu_inst_20_24_F INT,
+    Age_psns_att_edu_inst_20_24_P INT,
+    Age_psns_att_edu_inst_25_ov_M INT,
+    Age_psns_att_edu_inst_25_ov_F INT,
+    Age_psns_att_edu_inst_25_ov_P INT,
+    High_yr_schl_comp_Yr_12_eq_M INT,
+);
+  );
+  
+[0m22:25:51.284179 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 12:     CREATE TABLE upload_census_g01_data (
+             ^
+
+[0m22:25:51.285194 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g01_data: ROLLBACK
+[0m22:25:51.591684 [debug] [Thread-1 (]: Timing info for model.your_project_name.upload_census_g01_data (execute): 22:25:48.338254 => 22:25:51.590703
+[0m22:25:51.592809 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g01_data: Close
+[0m22:25:51.596933 [debug] [Thread-1 (]: Database Error in model upload_census_g01_data (models/raw/upload_census_g01_data.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE upload_census_g01_data (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/upload_census_g01_data.sql
+[0m22:25:51.597546 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11524b6d0>]}
+[0m22:25:51.598307 [error] [Thread-1 (]: 17 of 18 ERROR creating sql table model assignment_dev.upload_census_g01_data .. [[31mERROR[0m in 3.26s]
+[0m22:25:51.599122 [debug] [Thread-1 (]: Finished running node model.your_project_name.upload_census_g01_data
+[0m22:25:51.599721 [debug] [Thread-1 (]: Began running node model.your_project_name.upload_census_g02_data
+[0m22:25:51.600419 [info ] [Thread-1 (]: 18 of 18 START sql table model assignment_dev.upload_census_g02_data ........... [RUN]
+[0m22:25:51.601338 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.upload_census_g01_data, now model.your_project_name.upload_census_g02_data)
+[0m22:25:51.601864 [debug] [Thread-1 (]: Began compiling node model.your_project_name.upload_census_g02_data
+[0m22:25:51.603739 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.upload_census_g02_data"
+[0m22:25:51.604656 [debug] [Thread-1 (]: Timing info for model.your_project_name.upload_census_g02_data (compile): 22:25:51.602182 => 22:25:51.604359
+[0m22:25:51.605149 [debug] [Thread-1 (]: Began executing node model.your_project_name.upload_census_g02_data
+[0m22:25:51.610845 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.upload_census_g02_data"
+[0m22:25:51.611825 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.upload_census_g02_data"
+[0m22:25:51.612357 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g02_data: BEGIN
+[0m22:25:51.612836 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:54.254682 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:25:54.255791 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.upload_census_g02_data"
+[0m22:25:54.256688 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g02_data: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.upload_census_g02_data"} */
+
+  
+    
+
+  create  table "assignment"."assignment_dev"."upload_census_g02_data__dbt_tmp"
+  
+  
+    as
+  
+  (
+    CREATE TABLE upload_census_g02_data (
+    Median_age_persons INT,
+    Median_mortgage_repay_monthly DECIMAL(10, 2),
+    Median_tot_prsnl_inc_weekly DECIMAL(10, 2),
+    Median_rent_weekly DECIMAL(10, 2),
+    Median_tot_fam_inc_weekly DECIMAL(10, 2),
+    Average_num_psns_per_bedroom DECIMAL(5, 2),
+    Median_tot_hhd_inc_weekly DECIMAL(10, 2),
+    Average_household_size DECIMAL(5, 2)
+);
+  );
+  
+[0m22:25:54.560480 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 12:     CREATE TABLE upload_census_g02_data (
+             ^
+
+[0m22:25:54.561552 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g02_data: ROLLBACK
+[0m22:25:54.868389 [debug] [Thread-1 (]: Timing info for model.your_project_name.upload_census_g02_data (execute): 22:25:51.605461 => 22:25:54.867658
+[0m22:25:54.869355 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g02_data: Close
+[0m22:25:54.873538 [debug] [Thread-1 (]: Database Error in model upload_census_g02_data (models/raw/upload_census_g02_data.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE upload_census_g02_data (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/upload_census_g02_data.sql
+[0m22:25:54.874342 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '464d316d-17ed-412f-840b-605f035ad5a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1152d8210>]}
+[0m22:25:54.875195 [error] [Thread-1 (]: 18 of 18 ERROR creating sql table model assignment_dev.upload_census_g02_data .. [[31mERROR[0m in 3.27s]
+[0m22:25:54.876078 [debug] [Thread-1 (]: Finished running node model.your_project_name.upload_census_g02_data
+[0m22:25:54.877925 [debug] [MainThread]: Using postgres connection "master"
+[0m22:25:54.878405 [debug] [MainThread]: On master: BEGIN
+[0m22:25:54.878863 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:25:57.632661 [debug] [MainThread]: SQL status: BEGIN in 3.0 seconds
+[0m22:25:57.633656 [debug] [MainThread]: On master: COMMIT
+[0m22:25:57.634378 [debug] [MainThread]: Using postgres connection "master"
+[0m22:25:57.635080 [debug] [MainThread]: On master: COMMIT
+[0m22:25:57.939630 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:25:57.940654 [debug] [MainThread]: On master: Close
+[0m22:25:57.942691 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:25:57.943409 [debug] [MainThread]: Connection 'model.your_project_name.upload_census_g02_data' was properly closed.
+[0m22:25:57.944116 [info ] [MainThread]: 
+[0m22:25:57.944738 [info ] [MainThread]: Finished running 4 table models, 14 view models in 0 hours 1 minutes and 13.32 seconds (73.32s).
+[0m22:25:57.948849 [debug] [MainThread]: Command end result
+[0m22:25:57.960836 [info ] [MainThread]: 
+[0m22:25:57.961464 [info ] [MainThread]: [31mCompleted with 18 errors and 0 warnings:[0m
+[0m22:25:57.961952 [info ] [MainThread]: 
+[0m22:25:57.962416 [error] [MainThread]:   Database Error in model airbnb_listings (models/raw/airbnb_listings.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE airbnb_listings (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/airbnb_listings.sql
+[0m22:25:57.962867 [info ] [MainThread]: 
+[0m22:25:57.963312 [error] [MainThread]:   Database Error in model census_stg (models/staging/census_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE census_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/census_stg.sql
+[0m22:25:57.963759 [info ] [MainThread]: 
+[0m22:25:57.964207 [error] [MainThread]:   Database Error in model dim_census_g01 (models/warehouse/dim_census_g01.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_census_g01 (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_census_g01.sql
+[0m22:25:57.964649 [info ] [MainThread]: 
+[0m22:25:57.965101 [error] [MainThread]:   Database Error in model dim_census_g02 (models/warehouse/dim_census_g02.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_census_g02 (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_census_g02.sql
+[0m22:25:57.965547 [info ] [MainThread]: 
+[0m22:25:57.966023 [error] [MainThread]:   Database Error in model dim_host (models/warehouse/dim_host.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_host (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_host.sql
+[0m22:25:57.966676 [info ] [MainThread]: 
+[0m22:25:57.967341 [error] [MainThread]:   Database Error in model dim_lga (models/warehouse/dim_lga.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_lga (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_lga.sql
+[0m22:25:57.968118 [info ] [MainThread]: 
+[0m22:25:57.968776 [error] [MainThread]:   Database Error in model dim_property (models/warehouse/dim_property.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_property (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_property.sql
+[0m22:25:57.969302 [info ] [MainThread]: 
+[0m22:25:57.969917 [error] [MainThread]:   Database Error in model dim_suburb (models/warehouse/dim_suburb.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_suburb (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_suburb.sql
+[0m22:25:57.970470 [info ] [MainThread]: 
+[0m22:25:57.970972 [error] [MainThread]:   Database Error in model dm_host_neighbourhood (models/datamart/dm_host_neighbourhood.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dm_host_neighbourhood (
+              ^
+  compiled Code at target/run/your_project_name/models/datamart/dm_host_neighbourhood.sql
+[0m22:25:57.971696 [info ] [MainThread]: 
+[0m22:25:57.973174 [error] [MainThread]:   Database Error in model dm_listing_neighbourhood (models/datamart/dm_listing_neighbourhood.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dm_listing_neighbourhood (
+              ^
+  compiled Code at target/run/your_project_name/models/datamart/dm_listing_neighbourhood.sql
+[0m22:25:57.974013 [info ] [MainThread]: 
+[0m22:25:57.974883 [error] [MainThread]:   Database Error in model dm_property_type (models/datamart/dm_property_type.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dm_property_type (
+              ^
+  compiled Code at target/run/your_project_name/models/datamart/dm_property_type.sql
+[0m22:25:57.975420 [info ] [MainThread]: 
+[0m22:25:57.975892 [error] [MainThread]:   Database Error in model facts_listings (models/warehouse/facts_listings.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE facts_listings (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/facts_listings.sql
+[0m22:25:57.976488 [info ] [MainThread]: 
+[0m22:25:57.976993 [error] [MainThread]:   Database Error in model lga_stg (models/staging/lga_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE lga_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/lga_stg.sql
+[0m22:25:57.977445 [info ] [MainThread]: 
+[0m22:25:57.977895 [error] [MainThread]:   Database Error in model lga_suburb_mapping (models/raw/lga_suburb_mapping.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE lga_suburb_mapping (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/lga_suburb_mapping.sql
+[0m22:25:57.978331 [info ] [MainThread]: 
+[0m22:25:57.978760 [error] [MainThread]:   Database Error in model property_stg (models/staging/property_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE property_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/property_stg.sql
+[0m22:25:57.979199 [info ] [MainThread]: 
+[0m22:25:57.979692 [error] [MainThread]:   Database Error in model suburb_stg (models/staging/suburb_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE suburb_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/suburb_stg.sql
+[0m22:25:57.980227 [info ] [MainThread]: 
+[0m22:25:57.980720 [error] [MainThread]:   Database Error in model upload_census_g01_data (models/raw/upload_census_g01_data.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE upload_census_g01_data (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/upload_census_g01_data.sql
+[0m22:25:57.981466 [info ] [MainThread]: 
+[0m22:25:57.982293 [error] [MainThread]:   Database Error in model upload_census_g02_data (models/raw/upload_census_g02_data.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE upload_census_g02_data (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/upload_census_g02_data.sql
+[0m22:25:57.982885 [info ] [MainThread]: 
+[0m22:25:57.983479 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=18 SKIP=0 TOTAL=18
+[0m22:25:57.986605 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 74.910286, "process_user_time": 4.326161, "process_kernel_time": 0.352494, "process_mem_max_rss": "123113472", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m22:25:57.988271 [debug] [MainThread]: Command `dbt run` failed at 22:25:57.988049 after 74.91 seconds
+[0m22:25:57.988897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114495fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1144949d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f818790>]}
+[0m22:25:57.989546 [debug] [MainThread]: Flushing usage events
+[0m22:27:49.700565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d378510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d3524d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ccf5710>]}
+
+
+============================== 22:27:49.705314 | f356f587-ea95-4fcc-891a-aa31d7f28a53 ==============================
+[0m22:27:49.705314 [info ] [MainThread]: Running with dbt=1.7.0
+[0m22:27:49.706111 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/musadac/Desktop/assignment/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/musadac/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:27:49.706900 [info ] [MainThread]: dbt version: 1.7.0
+[0m22:27:49.707355 [info ] [MainThread]: python version: 3.11.5
+[0m22:27:49.707783 [info ] [MainThread]: python path: /usr/local/opt/python@3.11/bin/python3.11
+[0m22:27:49.708178 [info ] [MainThread]: os info: macOS-14.0-x86_64-i386-64bit
+[0m22:27:49.853547 [info ] [MainThread]: Using profiles dir at /Users/musadac/.dbt
+[0m22:27:49.854078 [info ] [MainThread]: Using profiles.yml file at /Users/musadac/.dbt/profiles.yml
+[0m22:27:49.854581 [info ] [MainThread]: Using dbt_project.yml file at /Users/musadac/Desktop/assignment/dbt_project.yml
+[0m22:27:49.855163 [info ] [MainThread]: adapter type: postgres
+[0m22:27:49.855530 [info ] [MainThread]: adapter version: 1.7.0
+[0m22:27:49.859568 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m22:27:49.860116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'f356f587-ea95-4fcc-891a-aa31d7f28a53', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d3aae10>]}
+[0m22:27:49.983526 [info ] [MainThread]: Configuration:
+[0m22:27:49.984014 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:27:49.984371 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:27:49.984781 [info ] [MainThread]: Required dependencies:
+[0m22:27:49.985213 [debug] [MainThread]: Executing "git --help"
+[0m22:27:50.006413 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:27:50.007434 [debug] [MainThread]: STDERR: "b''"
+[0m22:27:50.007901 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:27:50.008320 [info ] [MainThread]: Connection:
+[0m22:27:50.008773 [info ] [MainThread]:   host: 34.135.58.93
+[0m22:27:50.009141 [info ] [MainThread]:   port: 5432
+[0m22:27:50.009501 [info ] [MainThread]:   user: dev
+[0m22:27:50.009972 [info ] [MainThread]:   database: assignment
+[0m22:27:50.010395 [info ] [MainThread]:   schema: assignment_dev
+[0m22:27:50.010765 [info ] [MainThread]:   connect_timeout: 10
+[0m22:27:50.011143 [info ] [MainThread]:   role: None
+[0m22:27:50.011504 [info ] [MainThread]:   search_path: None
+[0m22:27:50.011860 [info ] [MainThread]:   keepalives_idle: 0
+[0m22:27:50.012217 [info ] [MainThread]:   sslmode: None
+[0m22:27:50.012578 [info ] [MainThread]:   sslcert: None
+[0m22:27:50.013226 [info ] [MainThread]:   sslkey: None
+[0m22:27:50.013819 [info ] [MainThread]:   sslrootcert: None
+[0m22:27:50.014325 [info ] [MainThread]:   application_name: dbt
+[0m22:27:50.014782 [info ] [MainThread]:   retries: 1
+[0m22:27:50.015406 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m22:27:50.024571 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m22:27:50.025881 [debug] [MainThread]: Using postgres connection "debug"
+[0m22:27:50.026336 [debug] [MainThread]: On debug: select 1 as id
+[0m22:27:50.026763 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:27:52.525466 [debug] [MainThread]: SQL status: SELECT 1 in 2.0 seconds
+[0m22:27:52.528120 [debug] [MainThread]: On debug: Close
+[0m22:27:52.529037 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:27:52.529689 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:27:52.532302 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 2.9137678, "process_user_time": 2.290701, "process_kernel_time": 0.215197, "process_mem_max_rss": "109285376", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m22:27:52.533187 [debug] [MainThread]: Command `dbt debug` succeeded at 22:27:52.532977 after 2.91 seconds
+[0m22:27:52.533730 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:27:52.534306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d398a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1086c4610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10874eb10>]}
+[0m22:27:52.535011 [debug] [MainThread]: Flushing usage events
+[0m22:29:00.766964 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ef20190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ef20b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ef2fb90>]}
+
+
+============================== 22:29:00.773011 | 61db6c59-c006-44aa-ae9f-038379f68015 ==============================
+[0m22:29:00.773011 [info ] [MainThread]: Running with dbt=1.7.0
+[0m22:29:00.773800 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/musadac/Desktop/assignment/logs', 'version_check': 'True', 'profiles_dir': '/Users/musadac/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:29:00.774583 [info ] [MainThread]: dbt version: 1.7.0
+[0m22:29:00.775056 [info ] [MainThread]: python version: 3.11.5
+[0m22:29:00.775510 [info ] [MainThread]: python path: /usr/local/opt/python@3.11/bin/python3.11
+[0m22:29:00.775935 [info ] [MainThread]: os info: macOS-14.0-x86_64-i386-64bit
+[0m22:29:00.915292 [info ] [MainThread]: Using profiles dir at /Users/musadac/.dbt
+[0m22:29:00.915771 [info ] [MainThread]: Using profiles.yml file at /Users/musadac/.dbt/profiles.yml
+[0m22:29:00.916117 [info ] [MainThread]: Using dbt_project.yml file at /Users/musadac/Desktop/assignment/dbt_project.yml
+[0m22:29:00.917259 [info ] [MainThread]: adapter type: postgres
+[0m22:29:00.917818 [info ] [MainThread]: adapter version: 1.7.0
+[0m22:29:00.921973 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m22:29:00.922488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '61db6c59-c006-44aa-ae9f-038379f68015', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f3017d0>]}
+[0m22:29:01.043453 [info ] [MainThread]: Configuration:
+[0m22:29:01.043920 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:29:01.044270 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:29:01.044609 [info ] [MainThread]: Required dependencies:
+[0m22:29:01.045010 [debug] [MainThread]: Executing "git --help"
+[0m22:29:01.062879 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:29:01.064820 [debug] [MainThread]: STDERR: "b''"
+[0m22:29:01.065493 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:29:01.065999 [info ] [MainThread]: Connection:
+[0m22:29:01.066546 [info ] [MainThread]:   host: 34.135.58.93
+[0m22:29:01.066996 [info ] [MainThread]:   port: 5432
+[0m22:29:01.067487 [info ] [MainThread]:   user: dev
+[0m22:29:01.067961 [info ] [MainThread]:   database: assignment
+[0m22:29:01.068461 [info ] [MainThread]:   schema: assignment
+[0m22:29:01.068954 [info ] [MainThread]:   connect_timeout: 10
+[0m22:29:01.069531 [info ] [MainThread]:   role: None
+[0m22:29:01.070130 [info ] [MainThread]:   search_path: None
+[0m22:29:01.070571 [info ] [MainThread]:   keepalives_idle: 0
+[0m22:29:01.070968 [info ] [MainThread]:   sslmode: None
+[0m22:29:01.071579 [info ] [MainThread]:   sslcert: None
+[0m22:29:01.072040 [info ] [MainThread]:   sslkey: None
+[0m22:29:01.072432 [info ] [MainThread]:   sslrootcert: None
+[0m22:29:01.072814 [info ] [MainThread]:   application_name: dbt
+[0m22:29:01.073188 [info ] [MainThread]:   retries: 1
+[0m22:29:01.073756 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m22:29:01.083383 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m22:29:01.084637 [debug] [MainThread]: Using postgres connection "debug"
+[0m22:29:01.085123 [debug] [MainThread]: On debug: select 1 as id
+[0m22:29:01.085569 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:29:03.600078 [debug] [MainThread]: SQL status: SELECT 1 in 3.0 seconds
+[0m22:29:03.601531 [debug] [MainThread]: On debug: Close
+[0m22:29:03.602132 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:29:03.602693 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:29:03.605531 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 2.9255202, "process_user_time": 2.389107, "process_kernel_time": 0.313502, "process_mem_max_rss": "109297664", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m22:29:03.606288 [debug] [MainThread]: Command `dbt debug` succeeded at 22:29:03.606093 after 2.93 seconds
+[0m22:29:03.606703 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:29:03.607127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ef669d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ef2ff10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e716610>]}
+[0m22:29:03.607630 [debug] [MainThread]: Flushing usage events
+[0m22:29:08.379629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e521410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e504950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d81c8d0>]}
+
+
+============================== 22:29:08.384283 | 8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7 ==============================
+[0m22:29:08.384283 [info ] [MainThread]: Running with dbt=1.7.0
+[0m22:29:08.385127 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/musadac/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/musadac/Desktop/assignment/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --full-refresh', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:29:08.516284 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m22:29:08.516816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e556590>]}
+[0m22:29:08.674536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e8cd7d0>]}
+[0m22:29:08.813904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e50c150>]}
+[0m22:29:08.814725 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m22:29:08.832497 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m22:29:08.844061 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m22:29:08.844824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e9e7d10>]}
+[0m22:29:09.833364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ef2a8d0>]}
+[0m22:29:09.843457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f2a7e10>]}
+[0m22:29:09.843967 [info ] [MainThread]: Found 18 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m22:29:09.844355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f09dd10>]}
+[0m22:29:09.846467 [info ] [MainThread]: 
+[0m22:29:09.847219 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m22:29:09.848777 [debug] [ThreadPool]: Acquiring new postgres connection 'list_assignment'
+[0m22:29:09.858521 [debug] [ThreadPool]: Using postgres connection "list_assignment"
+[0m22:29:09.859042 [debug] [ThreadPool]: On list_assignment: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "connection_name": "list_assignment"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:29:09.859410 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:29:12.345496 [debug] [ThreadPool]: SQL status: SELECT 5 in 2.0 seconds
+[0m22:29:12.347632 [debug] [ThreadPool]: On list_assignment: Close
+[0m22:29:12.349309 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assignment, now create_assignment_assignment)
+[0m22:29:12.350268 [debug] [ThreadPool]: Creating schema "database: "assignment"
+schema: "assignment"
+"
+[0m22:29:12.356859 [debug] [ThreadPool]: Using postgres connection "create_assignment_assignment"
+[0m22:29:12.357384 [debug] [ThreadPool]: On create_assignment_assignment: BEGIN
+[0m22:29:12.357802 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:29:14.956245 [debug] [ThreadPool]: SQL status: BEGIN in 3.0 seconds
+[0m22:29:14.956981 [debug] [ThreadPool]: Using postgres connection "create_assignment_assignment"
+[0m22:29:14.957585 [debug] [ThreadPool]: On create_assignment_assignment: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "connection_name": "create_assignment_assignment"} */
+create schema if not exists "assignment"
+[0m22:29:15.263744 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.0 seconds
+[0m22:29:15.265919 [debug] [ThreadPool]: On create_assignment_assignment: COMMIT
+[0m22:29:15.266664 [debug] [ThreadPool]: Using postgres connection "create_assignment_assignment"
+[0m22:29:15.267223 [debug] [ThreadPool]: On create_assignment_assignment: COMMIT
+[0m22:29:15.570620 [debug] [ThreadPool]: SQL status: COMMIT in 0.0 seconds
+[0m22:29:15.571720 [debug] [ThreadPool]: On create_assignment_assignment: Close
+[0m22:29:15.575739 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_assignment_assignment, now list_assignment_assignment)
+[0m22:29:15.582868 [debug] [ThreadPool]: Using postgres connection "list_assignment_assignment"
+[0m22:29:15.583319 [debug] [ThreadPool]: On list_assignment_assignment: BEGIN
+[0m22:29:15.583728 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:29:18.233476 [debug] [ThreadPool]: SQL status: BEGIN in 3.0 seconds
+[0m22:29:18.234480 [debug] [ThreadPool]: Using postgres connection "list_assignment_assignment"
+[0m22:29:18.235273 [debug] [ThreadPool]: On list_assignment_assignment: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "connection_name": "list_assignment_assignment"} */
+select
+      'assignment' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'assignment'
+    union all
+    select
+      'assignment' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'assignment'
+    union all
+    select
+      'assignment' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'assignment'
+  
+[0m22:29:18.478988 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m22:29:18.481625 [debug] [ThreadPool]: On list_assignment_assignment: ROLLBACK
+[0m22:29:18.745286 [debug] [ThreadPool]: On list_assignment_assignment: Close
+[0m22:29:18.753632 [debug] [MainThread]: Using postgres connection "master"
+[0m22:29:18.754183 [debug] [MainThread]: On master: BEGIN
+[0m22:29:18.754625 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:29:21.510246 [debug] [MainThread]: SQL status: BEGIN in 3.0 seconds
+[0m22:29:21.511255 [debug] [MainThread]: Using postgres connection "master"
+[0m22:29:21.512194 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:29:21.763459 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m22:29:21.766517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f0b0e90>]}
+[0m22:29:21.767359 [debug] [MainThread]: On master: ROLLBACK
+[0m22:29:22.124147 [debug] [MainThread]: Using postgres connection "master"
+[0m22:29:22.124843 [debug] [MainThread]: On master: BEGIN
+[0m22:29:22.738718 [debug] [MainThread]: SQL status: BEGIN in 1.0 seconds
+[0m22:29:22.739674 [debug] [MainThread]: On master: COMMIT
+[0m22:29:22.740254 [debug] [MainThread]: Using postgres connection "master"
+[0m22:29:22.740805 [debug] [MainThread]: On master: COMMIT
+[0m22:29:23.046020 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:29:23.046918 [debug] [MainThread]: On master: Close
+[0m22:29:23.048576 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:29:23.049272 [info ] [MainThread]: 
+[0m22:29:23.053409 [debug] [Thread-1 (]: Began running node model.your_project_name.airbnb_listings
+[0m22:29:23.054554 [info ] [Thread-1 (]: 1 of 18 START sql table model assignment.airbnb_listings ....................... [RUN]
+[0m22:29:23.055687 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_assignment_assignment, now model.your_project_name.airbnb_listings)
+[0m22:29:23.056262 [debug] [Thread-1 (]: Began compiling node model.your_project_name.airbnb_listings
+[0m22:29:23.063710 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.airbnb_listings"
+[0m22:29:23.064731 [debug] [Thread-1 (]: Timing info for model.your_project_name.airbnb_listings (compile): 22:29:23.056617 => 22:29:23.064414
+[0m22:29:23.065240 [debug] [Thread-1 (]: Began executing node model.your_project_name.airbnb_listings
+[0m22:29:23.113337 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.airbnb_listings"
+[0m22:29:23.121190 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.airbnb_listings"
+[0m22:29:23.121767 [debug] [Thread-1 (]: On model.your_project_name.airbnb_listings: BEGIN
+[0m22:29:23.122221 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:29:25.914012 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:29:25.915100 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.airbnb_listings"
+[0m22:29:25.916012 [debug] [Thread-1 (]: On model.your_project_name.airbnb_listings: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.airbnb_listings"} */
+
+  
+    
+
+  create  table "assignment"."assignment"."airbnb_listings__dbt_tmp"
+  
+  
+    as
+  
+  (
+    CREATE TABLE airbnb_listings (
+    LISTING_ID INT PRIMARY KEY,
+    SCRAPE_ID BIGINT,
+    SCRAPED_DATE DATE,
+    HOST_ID INT,
+    HOST_NAME VARCHAR(255),
+    HOST_SINCE DATE,
+    HOST_IS_SUPERHOST CHAR(1),
+    HOST_NEIGHBOURHOOD VARCHAR(255),
+    LISTING_NEIGHBOURHOOD VARCHAR(255),
+    PROPERTY_TYPE VARCHAR(255),
+    ROOM_TYPE VARCHAR(255),
+    ACCOMMODATES INT,
+    PRICE DECIMAL(10, 2),
+    HAS_AVAILABILITY CHAR(1),
+    AVAILABILITY_30 INT,
+    NUMBER_OF_REVIEWS INT,
+    REVIEW_SCORES_RATING DECIMAL(5, 2),
+    REVIEW_SCORES_ACCURACY INT,
+    REVIEW_SCORES_CLEANLINESS INT,
+    REVIEW_SCORES_CHECKIN INT,
+    REVIEW_SCORES_COMMUNICATION INT,
+    REVIEW_SCORES_VALUE INT
+);
+  );
+  
+[0m22:29:26.521863 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 12:     CREATE TABLE airbnb_listings (
+             ^
+
+[0m22:29:26.522879 [debug] [Thread-1 (]: On model.your_project_name.airbnb_listings: ROLLBACK
+[0m22:29:26.761526 [debug] [Thread-1 (]: Timing info for model.your_project_name.airbnb_listings (execute): 22:29:23.065559 => 22:29:26.761103
+[0m22:29:26.762197 [debug] [Thread-1 (]: On model.your_project_name.airbnb_listings: Close
+[0m22:29:26.775136 [debug] [Thread-1 (]: Database Error in model airbnb_listings (models/raw/airbnb_listings.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE airbnb_listings (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/airbnb_listings.sql
+[0m22:29:26.775937 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f36f750>]}
+[0m22:29:26.776748 [error] [Thread-1 (]: 1 of 18 ERROR creating sql table model assignment.airbnb_listings .............. [[31mERROR[0m in 3.72s]
+[0m22:29:26.777604 [debug] [Thread-1 (]: Finished running node model.your_project_name.airbnb_listings
+[0m22:29:26.778199 [debug] [Thread-1 (]: Began running node model.your_project_name.census_stg
+[0m22:29:26.778989 [info ] [Thread-1 (]: 2 of 18 START sql view model assignment.census_stg ............................. [RUN]
+[0m22:29:26.779921 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.airbnb_listings, now model.your_project_name.census_stg)
+[0m22:29:26.780442 [debug] [Thread-1 (]: Began compiling node model.your_project_name.census_stg
+[0m22:29:26.782862 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.census_stg"
+[0m22:29:26.783897 [debug] [Thread-1 (]: Timing info for model.your_project_name.census_stg (compile): 22:29:26.780771 => 22:29:26.783537
+[0m22:29:26.784432 [debug] [Thread-1 (]: Began executing node model.your_project_name.census_stg
+[0m22:29:26.810934 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.census_stg"
+[0m22:29:26.811997 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.census_stg"
+[0m22:29:26.812521 [debug] [Thread-1 (]: On model.your_project_name.census_stg: BEGIN
+[0m22:29:26.813000 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:29:30.214376 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:29:30.215429 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.census_stg"
+[0m22:29:30.216670 [debug] [Thread-1 (]: On model.your_project_name.census_stg: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.census_stg"} */
+
+  create view "assignment"."assignment"."census_stg__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE census_stg (
+    staging_id INT AUTO_INCREMENT PRIMARY KEY,
+    lga_code_2016 INT,
+    tot_p_m INT,
+    tot_p_f INT,
+    tot_p_p INT,
+    age_0_4_yr_m INT,
+    age_0_4_yr_f INT,
+    age_0_4_yr_p INT,
+    age_5_14_yr_m INT,
+    age_5_14_yr_f INT,
+    age_5_14_yr_p INT,
+    age_15_19_yr_m INT,
+    age_15_19_yr_f INT,
+    age_15_19_yr_p INT,
+    age_20_24_yr_m INT,
+    age_20_24_yr_f INT,
+    age_20_24_yr_p INT,
+    age_25_34_yr_m INT,
+    age_25_34_yr_f INT,
+    age_25_34_yr_p INT,
+    age_35_44_yr_m INT,
+    age_35_44_yr_f INT,
+    age_35_44_yr_p INT,
+    age_45_54_yr_m INT,
+    age_45_54_yr_f INT,
+    age_45_54_yr_p INT,
+    age_55_64_yr_m INT,
+    age_55_64_yr_f INT,
+    age_55_64_yr_p INT,
+    age_65_74_yr_m INT,
+    age_65_74_yr_f INT,
+    age_65_74_yr_p INT,
+    age_75_84_yr_m INT,
+    age_75_84_yr_f INT,
+    age_75_84_yr_p INT,
+    age_85ov_m INT,
+    age_85ov_f INT,
+    age_85ov_p INT,
+    counted_census_night_home_m INT,
+    counted_census_night_home_f INT,
+    counted_census_night_home_p INT,
+    count_census_nt_ewhere_aust_m INT,
+    count_census_nt_ewhere_aust_f INT,
+    count_census_nt_ewhere_aust_p INT,
+    indigenous_psns_aboriginal_m INT,
+    indigenous_psns_aboriginal_f INT,
+    indigenous_psns_aboriginal_p INT,
+    indig_psns_torres_strait_is_m INT,
+    indig_psns_torres_strait_is_f INT,
+    indig_psns_torres_strait_is_p INT,
+    indig_bth_abor_torres_st_is_m INT,
+    indig_bth_abor_torres_st_is_f INT,
+    indig_bth_abor_torres_st_is_p INT,
+    indigenous_p_tot_m INT,
+    indigenous_p_tot_f INT,
+    indigenous_p_tot_p INT,
+    birthplace_australia_m INT,
+    birthplace_australia_f INT,
+    birthplace_australia_p INT,
+    birthplace_elsewhere_m INT,
+    birthplace_elsewhere_f INT,
+    birthplace_elsewhere_p INT,
+    lang_spoken_home_eng_only_m INT,
+    lang_spoken_home_eng_only_f INT,
+    lang_spoken_home_eng_only_p INT,
+    lang_spoken_home_oth_lang_m INT,
+    lang_spoken_home_oth_lang_f INT,
+    lang_spoken_home_oth_lang_p INT,
+    australian_citizen_m INT,
+    australian_citizen_f INT,
+    australian_citizen_p INT,
+    age_psns_att_educ_inst_0_4_m INT,
+    age_psns_att_educ_inst_0_4_f INT,
+    age_psns_att_educ_inst_0_4_p INT,
+    age_psns_att_educ_inst_5_14_m INT,
+    age_psns_att_educ_inst_5_14_f INT,
+    age_psns_att_educ_inst_5_14_p INT,
+    age_psns_att_edu_inst_15_19_m INT,
+    age_psns_att_edu_inst_15_19_f INT,
+    age_psns_att_edu_inst_15_19_p INT,
+    age_psns_att_edu_inst_20_24_m INT,
+    age_psns_att_edu_inst_20_24_f INT,
+    age_psns_att_edu_inst_20_24_p INT,
+    age_psns_att_edu_inst_25_ov_m INT,
+    age_psns_att_edu_inst_25_ov_f INT,
+    age_psns_att_edu_inst_25_ov_p INT,
+    high_yr_schl_comp_yr_12_eq_m INT,
+    high_yr_schl_comp_yr_12_eq_f INT,
+    high_yr_schl_comp_yr_12_eq_p INT,
+    high_yr_schl_comp_yr_11_eq_m INT,
+    high_yr_schl_comp_yr_11_eq_f INT,
+    high_yr_schl_comp_yr_11_eq_p INT,
+    high_yr_schl_comp_yr_10_eq_m INT,
+    high_yr_schl_comp_yr_10_eq_f INT,
+    high_yr_schl_comp_yr_10_eq_p INT,
+    high_yr_schl_comp_yr_9_eq_m INT,
+    high_yr_schl_comp_yr_9_eq_f INT,
+    high_yr_schl_comp_yr_9_eq_p INT,
+    high_yr_schl_comp_yr_8_belw_m INT,
+    high_yr_schl_comp_yr_8_belw_f INT,
+    high_yr_schl_comp_yr_8_belw_p INT,
+    high_yr_schl_comp_d_n_g_sch_m INT,
+    high_yr_schl_comp_d_n_g_sch_f INT,
+    high_yr_schl_comp_d_n_g_sch_p INT,
+    count_psns_occ_priv_dwgs_m INT,
+    count_psns_occ_priv_dwgs_f INT,
+    count_psns_occ_priv_dwgs_p INT,
+    count_persons_occ_priv_dwgs_t INT,
+    count_persons_other_dwgs_m INT,
+    count_persons_other_dwgs_f INT,
+    count_persons_other_dwgs_p INT,
+    count_persons_other_dwgs_t INT,
+    median_age_persons DECIMAL(10,2),
+    median_mortgage_repay_monthly DECIMAL(10,2),
+    median_tot_prsnl_inc_weekly DECIMAL(10,2),
+    median_rent_weekly DECIMAL(10,2),
+    median_tot_fam_inc_weekly DECIMAL(10,2),
+    average_num_psns_per_bedroom DECIMAL(10,2),
+    median_tot_hhd_inc_weekly DECIMAL(10,2),
+    average_household_size DECIMAL(10,2),
+    batch_id VARCHAR(50),
+    load_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+  );
+[0m22:29:30.828548 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE census_stg (
+            ^
+
+[0m22:29:30.829952 [debug] [Thread-1 (]: On model.your_project_name.census_stg: ROLLBACK
+[0m22:29:31.136075 [debug] [Thread-1 (]: Timing info for model.your_project_name.census_stg (execute): 22:29:26.784763 => 22:29:31.135256
+[0m22:29:31.137151 [debug] [Thread-1 (]: On model.your_project_name.census_stg: Close
+[0m22:29:31.141271 [debug] [Thread-1 (]: Database Error in model census_stg (models/staging/census_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE census_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/census_stg.sql
+[0m22:29:31.141951 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f384a90>]}
+[0m22:29:31.142720 [error] [Thread-1 (]: 2 of 18 ERROR creating sql view model assignment.census_stg .................... [[31mERROR[0m in 4.36s]
+[0m22:29:31.143546 [debug] [Thread-1 (]: Finished running node model.your_project_name.census_stg
+[0m22:29:31.144136 [debug] [Thread-1 (]: Began running node model.your_project_name.dim_census_g01
+[0m22:29:31.144867 [info ] [Thread-1 (]: 3 of 18 START sql view model assignment.dim_census_g01 ......................... [RUN]
+[0m22:29:31.145808 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.census_stg, now model.your_project_name.dim_census_g01)
+[0m22:29:31.146344 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dim_census_g01
+[0m22:29:31.148422 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dim_census_g01"
+[0m22:29:31.149416 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_census_g01 (compile): 22:29:31.146687 => 22:29:31.149106
+[0m22:29:31.149915 [debug] [Thread-1 (]: Began executing node model.your_project_name.dim_census_g01
+[0m22:29:31.155652 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dim_census_g01"
+[0m22:29:31.156656 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_census_g01"
+[0m22:29:31.157163 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g01: BEGIN
+[0m22:29:31.157637 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:29:33.593455 [debug] [Thread-1 (]: SQL status: BEGIN in 2.0 seconds
+[0m22:29:33.594707 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_census_g01"
+[0m22:29:33.595970 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g01: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dim_census_g01"} */
+
+  create view "assignment"."assignment"."dim_census_g01__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dim_census_g01 (
+    census_id INT PRIMARY KEY,
+    lga_code_2016 INT,
+    total_population INT,
+    median_age INT,
+    number_of_private_dwellings INT,
+    average_people_per_household DECIMAL(3,1)
+);
+  );
+[0m22:29:33.900342 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dim_census_g01 (
+            ^
+
+[0m22:29:33.901299 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g01: ROLLBACK
+[0m22:29:34.208003 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_census_g01 (execute): 22:29:31.150231 => 22:29:34.207299
+[0m22:29:34.208830 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g01: Close
+[0m22:29:34.212560 [debug] [Thread-1 (]: Database Error in model dim_census_g01 (models/warehouse/dim_census_g01.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_census_g01 (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_census_g01.sql
+[0m22:29:34.213180 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f4224d0>]}
+[0m22:29:34.213957 [error] [Thread-1 (]: 3 of 18 ERROR creating sql view model assignment.dim_census_g01 ................ [[31mERROR[0m in 3.07s]
+[0m22:29:34.214808 [debug] [Thread-1 (]: Finished running node model.your_project_name.dim_census_g01
+[0m22:29:34.215424 [debug] [Thread-1 (]: Began running node model.your_project_name.dim_census_g02
+[0m22:29:34.216172 [info ] [Thread-1 (]: 4 of 18 START sql view model assignment.dim_census_g02 ......................... [RUN]
+[0m22:29:34.217103 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dim_census_g01, now model.your_project_name.dim_census_g02)
+[0m22:29:34.217642 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dim_census_g02
+[0m22:29:34.219779 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dim_census_g02"
+[0m22:29:34.220929 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_census_g02 (compile): 22:29:34.217988 => 22:29:34.220579
+[0m22:29:34.221468 [debug] [Thread-1 (]: Began executing node model.your_project_name.dim_census_g02
+[0m22:29:34.227421 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dim_census_g02"
+[0m22:29:34.228424 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_census_g02"
+[0m22:29:34.229018 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g02: BEGIN
+[0m22:29:34.229588 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:29:36.563888 [debug] [Thread-1 (]: SQL status: BEGIN in 2.0 seconds
+[0m22:29:36.564913 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_census_g02"
+[0m22:29:36.565752 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g02: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dim_census_g02"} */
+
+  create view "assignment"."assignment"."dim_census_g02__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dim_census_g02 (
+    census_id INT PRIMARY KEY,
+    lga_code_2016 INT,
+    population_aged_15_and_over INT,
+    employed_population INT,
+    unemployed_population INT,
+    not_in_labor_force_population INT,
+    population_attending_educational_institution INT
+);
+  );
+[0m22:29:36.869959 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dim_census_g02 (
+            ^
+
+[0m22:29:36.870972 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g02: ROLLBACK
+[0m22:29:37.177053 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_census_g02 (execute): 22:29:34.221986 => 22:29:37.176600
+[0m22:29:37.177809 [debug] [Thread-1 (]: On model.your_project_name.dim_census_g02: Close
+[0m22:29:37.181515 [debug] [Thread-1 (]: Database Error in model dim_census_g02 (models/warehouse/dim_census_g02.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_census_g02 (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_census_g02.sql
+[0m22:29:37.182784 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f2869d0>]}
+[0m22:29:37.184110 [error] [Thread-1 (]: 4 of 18 ERROR creating sql view model assignment.dim_census_g02 ................ [[31mERROR[0m in 2.97s]
+[0m22:29:37.185359 [debug] [Thread-1 (]: Finished running node model.your_project_name.dim_census_g02
+[0m22:29:37.186111 [debug] [Thread-1 (]: Began running node model.your_project_name.dim_host
+[0m22:29:37.186848 [info ] [Thread-1 (]: 5 of 18 START sql view model assignment.dim_host ............................... [RUN]
+[0m22:29:37.187848 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dim_census_g02, now model.your_project_name.dim_host)
+[0m22:29:37.188444 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dim_host
+[0m22:29:37.190959 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dim_host"
+[0m22:29:37.192365 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_host (compile): 22:29:37.188959 => 22:29:37.191925
+[0m22:29:37.193136 [debug] [Thread-1 (]: Began executing node model.your_project_name.dim_host
+[0m22:29:37.200215 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dim_host"
+[0m22:29:37.201595 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_host"
+[0m22:29:37.202826 [debug] [Thread-1 (]: On model.your_project_name.dim_host: BEGIN
+[0m22:29:37.203451 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:29:39.534106 [debug] [Thread-1 (]: SQL status: BEGIN in 2.0 seconds
+[0m22:29:39.534940 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_host"
+[0m22:29:39.535783 [debug] [Thread-1 (]: On model.your_project_name.dim_host: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dim_host"} */
+
+  create view "assignment"."assignment"."dim_host__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dim_host (
+    host_id INT PRIMARY KEY,
+    host_name VARCHAR(255),
+    host_since DATE,
+    host_location VARCHAR(255),
+    host_response_time VARCHAR(50),
+    host_response_rate DECIMAL(5,2),
+    host_acceptance_rate DECIMAL(5,2),
+    host_is_superhost BOOLEAN,
+    host_listings_count INT,
+    host_total_listings_count INT,
+    host_verifications TEXT,
+    host_identity_verified BOOLEAN
+);
+  );
+[0m22:29:39.839805 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dim_host (
+            ^
+
+[0m22:29:39.840884 [debug] [Thread-1 (]: On model.your_project_name.dim_host: ROLLBACK
+[0m22:29:40.147233 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_host (execute): 22:29:37.193624 => 22:29:40.146568
+[0m22:29:40.148192 [debug] [Thread-1 (]: On model.your_project_name.dim_host: Close
+[0m22:29:40.152489 [debug] [Thread-1 (]: Database Error in model dim_host (models/warehouse/dim_host.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_host (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_host.sql
+[0m22:29:40.153249 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f1cbad0>]}
+[0m22:29:40.154090 [error] [Thread-1 (]: 5 of 18 ERROR creating sql view model assignment.dim_host ...................... [[31mERROR[0m in 2.97s]
+[0m22:29:40.154917 [debug] [Thread-1 (]: Finished running node model.your_project_name.dim_host
+[0m22:29:40.155509 [debug] [Thread-1 (]: Began running node model.your_project_name.dim_lga
+[0m22:29:40.156212 [info ] [Thread-1 (]: 6 of 18 START sql view model assignment.dim_lga ................................ [RUN]
+[0m22:29:40.157169 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dim_host, now model.your_project_name.dim_lga)
+[0m22:29:40.157694 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dim_lga
+[0m22:29:40.159604 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dim_lga"
+[0m22:29:40.160500 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_lga (compile): 22:29:40.158011 => 22:29:40.160210
+[0m22:29:40.161029 [debug] [Thread-1 (]: Began executing node model.your_project_name.dim_lga
+[0m22:29:40.166580 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dim_lga"
+[0m22:29:40.167567 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_lga"
+[0m22:29:40.168063 [debug] [Thread-1 (]: On model.your_project_name.dim_lga: BEGIN
+[0m22:29:40.168517 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:29:42.775524 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:29:42.776318 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_lga"
+[0m22:29:42.776972 [debug] [Thread-1 (]: On model.your_project_name.dim_lga: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dim_lga"} */
+
+  create view "assignment"."assignment"."dim_lga__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dim_lga (
+    lga_id INT PRIMARY KEY,
+    lga_name VARCHAR(255),
+    state VARCHAR(50)
+);
+  );
+[0m22:29:43.144594 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dim_lga (
+            ^
+
+[0m22:29:43.145663 [debug] [Thread-1 (]: On model.your_project_name.dim_lga: ROLLBACK
+[0m22:29:43.423607 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_lga (execute): 22:29:40.161390 => 22:29:43.423124
+[0m22:29:43.424372 [debug] [Thread-1 (]: On model.your_project_name.dim_lga: Close
+[0m22:29:43.427878 [debug] [Thread-1 (]: Database Error in model dim_lga (models/warehouse/dim_lga.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_lga (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_lga.sql
+[0m22:29:43.428517 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f247010>]}
+[0m22:29:43.429274 [error] [Thread-1 (]: 6 of 18 ERROR creating sql view model assignment.dim_lga ....................... [[31mERROR[0m in 3.27s]
+[0m22:29:43.430091 [debug] [Thread-1 (]: Finished running node model.your_project_name.dim_lga
+[0m22:29:43.430675 [debug] [Thread-1 (]: Began running node model.your_project_name.dim_property
+[0m22:29:43.431329 [info ] [Thread-1 (]: 7 of 18 START sql view model assignment.dim_property ........................... [RUN]
+[0m22:29:43.432157 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dim_lga, now model.your_project_name.dim_property)
+[0m22:29:43.432628 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dim_property
+[0m22:29:43.434448 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dim_property"
+[0m22:29:43.435472 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_property (compile): 22:29:43.432925 => 22:29:43.435067
+[0m22:29:43.436006 [debug] [Thread-1 (]: Began executing node model.your_project_name.dim_property
+[0m22:29:43.441725 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dim_property"
+[0m22:29:43.442746 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_property"
+[0m22:29:43.443355 [debug] [Thread-1 (]: On model.your_project_name.dim_property: BEGIN
+[0m22:29:43.443955 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:29:46.189109 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:29:46.189877 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_property"
+[0m22:29:46.190644 [debug] [Thread-1 (]: On model.your_project_name.dim_property: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dim_property"} */
+
+  create view "assignment"."assignment"."dim_property__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dim_property (
+    property_id INT PRIMARY KEY,
+    property_name VARCHAR(255),
+    property_type VARCHAR(50),
+    room_type VARCHAR(50),
+    accommodate INT,
+    bathrooms DECIMAL(3,1),
+    bedrooms INT,
+    beds INT,
+    amenities TEXT,
+    price DECIMAL(10,2),
+    security_deposit DECIMAL(10,2),
+    cleaning_fee DECIMAL(10,2),
+    property_rules TEXT,
+    minimum_nights INT,
+    maximum_nights INT,
+    property_review_score DECIMAL(3,2),
+    property_reviews_count INT
+);
+  );
+[0m22:29:46.495876 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dim_property (
+            ^
+
+[0m22:29:46.496940 [debug] [Thread-1 (]: On model.your_project_name.dim_property: ROLLBACK
+[0m22:29:46.803028 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_property (execute): 22:29:43.436355 => 22:29:46.802365
+[0m22:29:46.804023 [debug] [Thread-1 (]: On model.your_project_name.dim_property: Close
+[0m22:29:46.807882 [debug] [Thread-1 (]: Database Error in model dim_property (models/warehouse/dim_property.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_property (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_property.sql
+[0m22:29:46.808539 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f262e50>]}
+[0m22:29:46.809310 [error] [Thread-1 (]: 7 of 18 ERROR creating sql view model assignment.dim_property .................. [[31mERROR[0m in 3.38s]
+[0m22:29:46.810135 [debug] [Thread-1 (]: Finished running node model.your_project_name.dim_property
+[0m22:29:46.810741 [debug] [Thread-1 (]: Began running node model.your_project_name.dim_suburb
+[0m22:29:46.811526 [info ] [Thread-1 (]: 8 of 18 START sql view model assignment.dim_suburb ............................. [RUN]
+[0m22:29:46.812481 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dim_property, now model.your_project_name.dim_suburb)
+[0m22:29:46.812989 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dim_suburb
+[0m22:29:46.814966 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dim_suburb"
+[0m22:29:46.815893 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_suburb (compile): 22:29:46.813308 => 22:29:46.815598
+[0m22:29:46.816381 [debug] [Thread-1 (]: Began executing node model.your_project_name.dim_suburb
+[0m22:29:46.823261 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dim_suburb"
+[0m22:29:46.824272 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_suburb"
+[0m22:29:46.824769 [debug] [Thread-1 (]: On model.your_project_name.dim_suburb: BEGIN
+[0m22:29:46.825228 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:29:49.399947 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:29:49.400985 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dim_suburb"
+[0m22:29:49.401845 [debug] [Thread-1 (]: On model.your_project_name.dim_suburb: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dim_suburb"} */
+
+  create view "assignment"."assignment"."dim_suburb__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dim_suburb (
+    suburb_id INT PRIMARY KEY,
+    suburb_name VARCHAR(255),
+    state VARCHAR(50),
+    postcode VARCHAR(10),
+    latitude DECIMAL(9,6),
+    longitude DECIMAL(9,6)
+);
+  );
+[0m22:29:49.673982 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dim_suburb (
+            ^
+
+[0m22:29:49.674884 [debug] [Thread-1 (]: On model.your_project_name.dim_suburb: ROLLBACK
+[0m22:29:49.978748 [debug] [Thread-1 (]: Timing info for model.your_project_name.dim_suburb (execute): 22:29:46.816732 => 22:29:49.978003
+[0m22:29:49.979703 [debug] [Thread-1 (]: On model.your_project_name.dim_suburb: Close
+[0m22:29:49.983873 [debug] [Thread-1 (]: Database Error in model dim_suburb (models/warehouse/dim_suburb.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_suburb (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_suburb.sql
+[0m22:29:49.984678 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f29cf50>]}
+[0m22:29:49.985674 [error] [Thread-1 (]: 8 of 18 ERROR creating sql view model assignment.dim_suburb .................... [[31mERROR[0m in 3.17s]
+[0m22:29:49.986531 [debug] [Thread-1 (]: Finished running node model.your_project_name.dim_suburb
+[0m22:29:49.987140 [debug] [Thread-1 (]: Began running node model.your_project_name.dm_host_neighbourhood
+[0m22:29:49.987860 [info ] [Thread-1 (]: 9 of 18 START sql view model assignment.dm_host_neighbourhood .................. [RUN]
+[0m22:29:49.988807 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dim_suburb, now model.your_project_name.dm_host_neighbourhood)
+[0m22:29:49.989336 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dm_host_neighbourhood
+[0m22:29:49.991231 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dm_host_neighbourhood"
+[0m22:29:49.992236 [debug] [Thread-1 (]: Timing info for model.your_project_name.dm_host_neighbourhood (compile): 22:29:49.989650 => 22:29:49.991910
+[0m22:29:49.992732 [debug] [Thread-1 (]: Began executing node model.your_project_name.dm_host_neighbourhood
+[0m22:29:49.998268 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dm_host_neighbourhood"
+[0m22:29:49.999098 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dm_host_neighbourhood"
+[0m22:29:49.999588 [debug] [Thread-1 (]: On model.your_project_name.dm_host_neighbourhood: BEGIN
+[0m22:29:50.000053 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:29:52.537163 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:29:52.538314 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dm_host_neighbourhood"
+[0m22:29:52.539001 [debug] [Thread-1 (]: On model.your_project_name.dm_host_neighbourhood: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dm_host_neighbourhood"} */
+
+  create view "assignment"."assignment"."dm_host_neighbourhood__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dm_host_neighbourhood (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    host_id INT,
+    neighbourhood_name VARCHAR(255),
+    total_listings_by_host INT,
+    average_listing_price DECIMAL(10,2),
+    average_host_rating DECIMAL(3,2),
+    FOREIGN KEY (host_id) REFERENCES dim_host(host_id)
+);
+  );
+[0m22:29:52.778670 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dm_host_neighbourhood (
+            ^
+
+[0m22:29:52.779772 [debug] [Thread-1 (]: On model.your_project_name.dm_host_neighbourhood: ROLLBACK
+[0m22:29:53.019422 [debug] [Thread-1 (]: Timing info for model.your_project_name.dm_host_neighbourhood (execute): 22:29:49.993055 => 22:29:53.018929
+[0m22:29:53.020167 [debug] [Thread-1 (]: On model.your_project_name.dm_host_neighbourhood: Close
+[0m22:29:53.023908 [debug] [Thread-1 (]: Database Error in model dm_host_neighbourhood (models/datamart/dm_host_neighbourhood.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dm_host_neighbourhood (
+              ^
+  compiled Code at target/run/your_project_name/models/datamart/dm_host_neighbourhood.sql
+[0m22:29:53.024534 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f332510>]}
+[0m22:29:53.025302 [error] [Thread-1 (]: 9 of 18 ERROR creating sql view model assignment.dm_host_neighbourhood ......... [[31mERROR[0m in 3.04s]
+[0m22:29:53.026129 [debug] [Thread-1 (]: Finished running node model.your_project_name.dm_host_neighbourhood
+[0m22:29:53.026728 [debug] [Thread-1 (]: Began running node model.your_project_name.dm_listing_neighbourhood
+[0m22:29:53.027447 [info ] [Thread-1 (]: 10 of 18 START sql view model assignment.dm_listing_neighbourhood .............. [RUN]
+[0m22:29:53.028314 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dm_host_neighbourhood, now model.your_project_name.dm_listing_neighbourhood)
+[0m22:29:53.028815 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dm_listing_neighbourhood
+[0m22:29:53.030690 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dm_listing_neighbourhood"
+[0m22:29:53.031604 [debug] [Thread-1 (]: Timing info for model.your_project_name.dm_listing_neighbourhood (compile): 22:29:53.029131 => 22:29:53.031301
+[0m22:29:53.032103 [debug] [Thread-1 (]: Began executing node model.your_project_name.dm_listing_neighbourhood
+[0m22:29:53.037813 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dm_listing_neighbourhood"
+[0m22:29:53.038754 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dm_listing_neighbourhood"
+[0m22:29:53.039303 [debug] [Thread-1 (]: On model.your_project_name.dm_listing_neighbourhood: BEGIN
+[0m22:29:53.040012 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:29:55.814051 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:29:55.815106 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dm_listing_neighbourhood"
+[0m22:29:55.815982 [debug] [Thread-1 (]: On model.your_project_name.dm_listing_neighbourhood: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dm_listing_neighbourhood"} */
+
+  create view "assignment"."assignment"."dm_listing_neighbourhood__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dm_listing_neighbourhood (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    neighbourhood_name VARCHAR(255),
+    number_of_listings INT,
+    average_price DECIMAL(10,2),
+    average_review_score DECIMAL(3,2),
+    total_availability INT
+);
+  );
+[0m22:29:56.122048 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dm_listing_neighbourhood (
+            ^
+
+[0m22:29:56.123070 [debug] [Thread-1 (]: On model.your_project_name.dm_listing_neighbourhood: ROLLBACK
+[0m22:29:56.428399 [debug] [Thread-1 (]: Timing info for model.your_project_name.dm_listing_neighbourhood (execute): 22:29:53.032418 => 22:29:56.427899
+[0m22:29:56.429180 [debug] [Thread-1 (]: On model.your_project_name.dm_listing_neighbourhood: Close
+[0m22:29:56.432859 [debug] [Thread-1 (]: Database Error in model dm_listing_neighbourhood (models/datamart/dm_listing_neighbourhood.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dm_listing_neighbourhood (
+              ^
+  compiled Code at target/run/your_project_name/models/datamart/dm_listing_neighbourhood.sql
+[0m22:29:56.433471 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e8acb50>]}
+[0m22:29:56.434244 [error] [Thread-1 (]: 10 of 18 ERROR creating sql view model assignment.dm_listing_neighbourhood ..... [[31mERROR[0m in 3.41s]
+[0m22:29:56.435091 [debug] [Thread-1 (]: Finished running node model.your_project_name.dm_listing_neighbourhood
+[0m22:29:56.435739 [debug] [Thread-1 (]: Began running node model.your_project_name.dm_property_type
+[0m22:29:56.436508 [info ] [Thread-1 (]: 11 of 18 START sql view model assignment.dm_property_type ...................... [RUN]
+[0m22:29:56.437426 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dm_listing_neighbourhood, now model.your_project_name.dm_property_type)
+[0m22:29:56.437930 [debug] [Thread-1 (]: Began compiling node model.your_project_name.dm_property_type
+[0m22:29:56.439825 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.dm_property_type"
+[0m22:29:56.440745 [debug] [Thread-1 (]: Timing info for model.your_project_name.dm_property_type (compile): 22:29:56.438246 => 22:29:56.440439
+[0m22:29:56.441244 [debug] [Thread-1 (]: Began executing node model.your_project_name.dm_property_type
+[0m22:29:56.446460 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.dm_property_type"
+[0m22:29:56.447250 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dm_property_type"
+[0m22:29:56.447735 [debug] [Thread-1 (]: On model.your_project_name.dm_property_type: BEGIN
+[0m22:29:56.448172 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:29:59.194350 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:29:59.195432 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.dm_property_type"
+[0m22:29:59.196290 [debug] [Thread-1 (]: On model.your_project_name.dm_property_type: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.dm_property_type"} */
+
+  create view "assignment"."assignment"."dm_property_type__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE dm_property_type (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    property_type VARCHAR(255),
+    count_properties INT,
+    average_price DECIMAL(10,2),
+    average_occupancy_rate DECIMAL(5,2)
+);
+  );
+[0m22:29:59.499968 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE dm_property_type (
+            ^
+
+[0m22:29:59.500500 [debug] [Thread-1 (]: On model.your_project_name.dm_property_type: ROLLBACK
+[0m22:29:59.807128 [debug] [Thread-1 (]: Timing info for model.your_project_name.dm_property_type (execute): 22:29:56.441554 => 22:29:59.806821
+[0m22:29:59.807602 [debug] [Thread-1 (]: On model.your_project_name.dm_property_type: Close
+[0m22:29:59.809924 [debug] [Thread-1 (]: Database Error in model dm_property_type (models/datamart/dm_property_type.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dm_property_type (
+              ^
+  compiled Code at target/run/your_project_name/models/datamart/dm_property_type.sql
+[0m22:29:59.810360 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f149850>]}
+[0m22:29:59.810917 [error] [Thread-1 (]: 11 of 18 ERROR creating sql view model assignment.dm_property_type ............. [[31mERROR[0m in 3.37s]
+[0m22:29:59.811505 [debug] [Thread-1 (]: Finished running node model.your_project_name.dm_property_type
+[0m22:29:59.811931 [debug] [Thread-1 (]: Began running node model.your_project_name.facts_listings
+[0m22:29:59.812452 [info ] [Thread-1 (]: 12 of 18 START sql view model assignment.facts_listings ........................ [RUN]
+[0m22:29:59.813185 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.dm_property_type, now model.your_project_name.facts_listings)
+[0m22:29:59.813607 [debug] [Thread-1 (]: Began compiling node model.your_project_name.facts_listings
+[0m22:29:59.815195 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.facts_listings"
+[0m22:29:59.815905 [debug] [Thread-1 (]: Timing info for model.your_project_name.facts_listings (compile): 22:29:59.813871 => 22:29:59.815680
+[0m22:29:59.816326 [debug] [Thread-1 (]: Began executing node model.your_project_name.facts_listings
+[0m22:29:59.820971 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.facts_listings"
+[0m22:29:59.821721 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.facts_listings"
+[0m22:29:59.822110 [debug] [Thread-1 (]: On model.your_project_name.facts_listings: BEGIN
+[0m22:29:59.822479 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:30:02.469975 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:30:02.470994 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.facts_listings"
+[0m22:30:02.471809 [debug] [Thread-1 (]: On model.your_project_name.facts_listings: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.facts_listings"} */
+
+  create view "assignment"."assignment"."facts_listings__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE facts_listings (
+    listing_id INT PRIMARY KEY,
+    date DATE,
+    property_id INT,
+    host_id INT,
+    suburb_id INT,
+    lga_id INT,
+    census_g01_id INT,
+    census_g02_id INT,
+    number_of_bookings INT,
+    total_revenue DECIMAL(18,2),
+    average_rating DECIMAL(3,2),
+    number_of_reviews INT,
+    FOREIGN KEY (property_id) REFERENCES dim_property(property_id),
+    FOREIGN KEY (host_id) REFERENCES dim_host(host_id),
+    FOREIGN KEY (suburb_id) REFERENCES dim_suburb(suburb_id),
+    FOREIGN KEY (lga_id) REFERENCES dim_lga(lga_id),
+    FOREIGN KEY (census_g01_id) REFERENCES dim_census_g01(census_id),
+    FOREIGN KEY (census_g02_id) REFERENCES dim_census_g02(census_id)
+);
+  );
+[0m22:30:02.777829 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE facts_listings (
+            ^
+
+[0m22:30:02.778863 [debug] [Thread-1 (]: On model.your_project_name.facts_listings: ROLLBACK
+[0m22:30:03.084508 [debug] [Thread-1 (]: Timing info for model.your_project_name.facts_listings (execute): 22:29:59.816596 => 22:30:03.083840
+[0m22:30:03.085372 [debug] [Thread-1 (]: On model.your_project_name.facts_listings: Close
+[0m22:30:03.089036 [debug] [Thread-1 (]: Database Error in model facts_listings (models/warehouse/facts_listings.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE facts_listings (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/facts_listings.sql
+[0m22:30:03.089663 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f339350>]}
+[0m22:30:03.090429 [error] [Thread-1 (]: 12 of 18 ERROR creating sql view model assignment.facts_listings ............... [[31mERROR[0m in 3.28s]
+[0m22:30:03.091246 [debug] [Thread-1 (]: Finished running node model.your_project_name.facts_listings
+[0m22:30:03.091838 [debug] [Thread-1 (]: Began running node model.your_project_name.lga_stg
+[0m22:30:03.092514 [info ] [Thread-1 (]: 13 of 18 START sql view model assignment.lga_stg ............................... [RUN]
+[0m22:30:03.093373 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.facts_listings, now model.your_project_name.lga_stg)
+[0m22:30:03.093871 [debug] [Thread-1 (]: Began compiling node model.your_project_name.lga_stg
+[0m22:30:03.095744 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.lga_stg"
+[0m22:30:03.096648 [debug] [Thread-1 (]: Timing info for model.your_project_name.lga_stg (compile): 22:30:03.094186 => 22:30:03.096351
+[0m22:30:03.097130 [debug] [Thread-1 (]: Began executing node model.your_project_name.lga_stg
+[0m22:30:03.102629 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.lga_stg"
+[0m22:30:03.103580 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.lga_stg"
+[0m22:30:03.104088 [debug] [Thread-1 (]: On model.your_project_name.lga_stg: BEGIN
+[0m22:30:03.104562 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:30:05.849411 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:30:05.850533 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.lga_stg"
+[0m22:30:05.851532 [debug] [Thread-1 (]: On model.your_project_name.lga_stg: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.lga_stg"} */
+
+  create view "assignment"."assignment"."lga_stg__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE lga_stg (
+    staging_id INT AUTO_INCREMENT PRIMARY KEY,
+    lga_code INT,
+    lga_name VARCHAR(255),
+    batch_id VARCHAR(50),
+    load_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+  );
+[0m22:30:06.156187 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE lga_stg (
+            ^
+
+[0m22:30:06.156990 [debug] [Thread-1 (]: On model.your_project_name.lga_stg: ROLLBACK
+[0m22:30:06.397141 [debug] [Thread-1 (]: Timing info for model.your_project_name.lga_stg (execute): 22:30:03.097440 => 22:30:06.396401
+[0m22:30:06.398124 [debug] [Thread-1 (]: On model.your_project_name.lga_stg: Close
+[0m22:30:06.402317 [debug] [Thread-1 (]: Database Error in model lga_stg (models/staging/lga_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE lga_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/lga_stg.sql
+[0m22:30:06.403121 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f264d90>]}
+[0m22:30:06.403971 [error] [Thread-1 (]: 13 of 18 ERROR creating sql view model assignment.lga_stg ...................... [[31mERROR[0m in 3.31s]
+[0m22:30:06.404840 [debug] [Thread-1 (]: Finished running node model.your_project_name.lga_stg
+[0m22:30:06.405460 [debug] [Thread-1 (]: Began running node model.your_project_name.lga_suburb_mapping
+[0m22:30:06.406160 [info ] [Thread-1 (]: 14 of 18 START sql table model assignment.lga_suburb_mapping ................... [RUN]
+[0m22:30:06.407120 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.lga_stg, now model.your_project_name.lga_suburb_mapping)
+[0m22:30:06.407661 [debug] [Thread-1 (]: Began compiling node model.your_project_name.lga_suburb_mapping
+[0m22:30:06.409563 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.lga_suburb_mapping"
+[0m22:30:06.410485 [debug] [Thread-1 (]: Timing info for model.your_project_name.lga_suburb_mapping (compile): 22:30:06.407983 => 22:30:06.410186
+[0m22:30:06.410994 [debug] [Thread-1 (]: Began executing node model.your_project_name.lga_suburb_mapping
+[0m22:30:06.417430 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.lga_suburb_mapping"
+[0m22:30:06.418457 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.lga_suburb_mapping"
+[0m22:30:06.418982 [debug] [Thread-1 (]: On model.your_project_name.lga_suburb_mapping: BEGIN
+[0m22:30:06.419494 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:30:09.023849 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:30:09.024914 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.lga_suburb_mapping"
+[0m22:30:09.025772 [debug] [Thread-1 (]: On model.your_project_name.lga_suburb_mapping: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.lga_suburb_mapping"} */
+
+  
+    
+
+  create  table "assignment"."assignment"."lga_suburb_mapping__dbt_tmp"
+  
+  
+    as
+  
+  (
+    CREATE TABLE lga_suburb_mapping (
+    LGA_CODE INT PRIMARY KEY,
+    LGA_NAME VARCHAR(255)
+);
+  );
+  
+[0m22:30:09.331003 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 12:     CREATE TABLE lga_suburb_mapping (
+             ^
+
+[0m22:30:09.332057 [debug] [Thread-1 (]: On model.your_project_name.lga_suburb_mapping: ROLLBACK
+[0m22:30:09.638038 [debug] [Thread-1 (]: Timing info for model.your_project_name.lga_suburb_mapping (execute): 22:30:06.411309 => 22:30:09.637444
+[0m22:30:09.638983 [debug] [Thread-1 (]: On model.your_project_name.lga_suburb_mapping: Close
+[0m22:30:09.642732 [debug] [Thread-1 (]: Database Error in model lga_suburb_mapping (models/raw/lga_suburb_mapping.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE lga_suburb_mapping (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/lga_suburb_mapping.sql
+[0m22:30:09.643322 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f43a3d0>]}
+[0m22:30:09.644070 [error] [Thread-1 (]: 14 of 18 ERROR creating sql table model assignment.lga_suburb_mapping .......... [[31mERROR[0m in 3.24s]
+[0m22:30:09.644885 [debug] [Thread-1 (]: Finished running node model.your_project_name.lga_suburb_mapping
+[0m22:30:09.645470 [debug] [Thread-1 (]: Began running node model.your_project_name.property_stg
+[0m22:30:09.646155 [info ] [Thread-1 (]: 15 of 18 START sql view model assignment.property_stg .......................... [RUN]
+[0m22:30:09.647098 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.lga_suburb_mapping, now model.your_project_name.property_stg)
+[0m22:30:09.647600 [debug] [Thread-1 (]: Began compiling node model.your_project_name.property_stg
+[0m22:30:09.649515 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.property_stg"
+[0m22:30:09.650470 [debug] [Thread-1 (]: Timing info for model.your_project_name.property_stg (compile): 22:30:09.647918 => 22:30:09.650150
+[0m22:30:09.651056 [debug] [Thread-1 (]: Began executing node model.your_project_name.property_stg
+[0m22:30:09.657185 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.property_stg"
+[0m22:30:09.658290 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.property_stg"
+[0m22:30:09.658889 [debug] [Thread-1 (]: On model.your_project_name.property_stg: BEGIN
+[0m22:30:09.659408 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:30:12.265369 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:30:12.266686 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.property_stg"
+[0m22:30:12.267634 [debug] [Thread-1 (]: On model.your_project_name.property_stg: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.property_stg"} */
+
+  create view "assignment"."assignment"."property_stg__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE property_stg (
+    staging_id INT AUTO_INCREMENT PRIMARY KEY,
+    listing_id INT,
+    scrape_id BIGINT,
+    scraped_date DATE,
+    host_id BIGINT,
+    host_name VARCHAR(255),
+    host_since DATE,
+    host_is_superhost CHAR(1),
+    host_neighbourhood VARCHAR(255),
+    listing_neighbourhood VARCHAR(255),
+    property_type VARCHAR(255),
+    room_type VARCHAR(255),
+    accommodates INT,
+    price DECIMAL(10,2),
+    has_availability CHAR(1),
+    availability_30 INT,
+    number_of_reviews INT,
+    review_scores_rating DECIMAL(4,1),
+    review_scores_accuracy INT,
+    review_scores_cleanliness INT,
+    review_scores_checkin INT,
+    review_scores_communication INT,
+    review_scores_value INT,
+    batch_id VARCHAR(50),
+    load_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+  );
+[0m22:30:12.506836 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE property_stg (
+            ^
+
+[0m22:30:12.507846 [debug] [Thread-1 (]: On model.your_project_name.property_stg: ROLLBACK
+[0m22:30:12.746825 [debug] [Thread-1 (]: Timing info for model.your_project_name.property_stg (execute): 22:30:09.651613 => 22:30:12.746097
+[0m22:30:12.747787 [debug] [Thread-1 (]: On model.your_project_name.property_stg: Close
+[0m22:30:12.752372 [debug] [Thread-1 (]: Database Error in model property_stg (models/staging/property_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE property_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/property_stg.sql
+[0m22:30:12.753149 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f34b190>]}
+[0m22:30:12.753931 [error] [Thread-1 (]: 15 of 18 ERROR creating sql view model assignment.property_stg ................. [[31mERROR[0m in 3.11s]
+[0m22:30:12.754760 [debug] [Thread-1 (]: Finished running node model.your_project_name.property_stg
+[0m22:30:12.755362 [debug] [Thread-1 (]: Began running node model.your_project_name.suburb_stg
+[0m22:30:12.756060 [info ] [Thread-1 (]: 16 of 18 START sql view model assignment.suburb_stg ............................ [RUN]
+[0m22:30:12.757024 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.property_stg, now model.your_project_name.suburb_stg)
+[0m22:30:12.757558 [debug] [Thread-1 (]: Began compiling node model.your_project_name.suburb_stg
+[0m22:30:12.759494 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.suburb_stg"
+[0m22:30:12.760472 [debug] [Thread-1 (]: Timing info for model.your_project_name.suburb_stg (compile): 22:30:12.757882 => 22:30:12.760133
+[0m22:30:12.761006 [debug] [Thread-1 (]: Began executing node model.your_project_name.suburb_stg
+[0m22:30:12.766906 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.suburb_stg"
+[0m22:30:12.767921 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.suburb_stg"
+[0m22:30:12.768450 [debug] [Thread-1 (]: On model.your_project_name.suburb_stg: BEGIN
+[0m22:30:12.768943 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:30:15.372004 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:30:15.372801 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.suburb_stg"
+[0m22:30:15.373564 [debug] [Thread-1 (]: On model.your_project_name.suburb_stg: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.suburb_stg"} */
+
+  create view "assignment"."assignment"."suburb_stg__dbt_tmp"
+    
+    
+  as (
+    CREATE TABLE suburb_stg (
+    staging_id INT AUTO_INCREMENT PRIMARY KEY,
+    suburb_id INT,
+    suburb_name VARCHAR(255),
+    batch_id VARCHAR(50),
+    load_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+  );
+[0m22:30:15.679838 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 7:     CREATE TABLE suburb_stg (
+            ^
+
+[0m22:30:15.680881 [debug] [Thread-1 (]: On model.your_project_name.suburb_stg: ROLLBACK
+[0m22:30:15.920251 [debug] [Thread-1 (]: Timing info for model.your_project_name.suburb_stg (execute): 22:30:12.761329 => 22:30:15.919646
+[0m22:30:15.921120 [debug] [Thread-1 (]: On model.your_project_name.suburb_stg: Close
+[0m22:30:15.924842 [debug] [Thread-1 (]: Database Error in model suburb_stg (models/staging/suburb_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE suburb_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/suburb_stg.sql
+[0m22:30:15.925444 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f394810>]}
+[0m22:30:15.926200 [error] [Thread-1 (]: 16 of 18 ERROR creating sql view model assignment.suburb_stg ................... [[31mERROR[0m in 3.17s]
+[0m22:30:15.927018 [debug] [Thread-1 (]: Finished running node model.your_project_name.suburb_stg
+[0m22:30:15.927612 [debug] [Thread-1 (]: Began running node model.your_project_name.upload_census_g01_data
+[0m22:30:15.928354 [info ] [Thread-1 (]: 17 of 18 START sql table model assignment.upload_census_g01_data ............... [RUN]
+[0m22:30:15.929249 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.suburb_stg, now model.your_project_name.upload_census_g01_data)
+[0m22:30:15.929749 [debug] [Thread-1 (]: Began compiling node model.your_project_name.upload_census_g01_data
+[0m22:30:15.931707 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.upload_census_g01_data"
+[0m22:30:15.932703 [debug] [Thread-1 (]: Timing info for model.your_project_name.upload_census_g01_data (compile): 22:30:15.930068 => 22:30:15.932401
+[0m22:30:15.933193 [debug] [Thread-1 (]: Began executing node model.your_project_name.upload_census_g01_data
+[0m22:30:15.939082 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.upload_census_g01_data"
+[0m22:30:15.940054 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.upload_census_g01_data"
+[0m22:30:15.940589 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g01_data: BEGIN
+[0m22:30:15.941184 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:30:19.263403 [debug] [Thread-1 (]: SQL status: BEGIN in 3.0 seconds
+[0m22:30:19.264372 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.upload_census_g01_data"
+[0m22:30:19.265420 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g01_data: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.upload_census_g01_data"} */
+
+  
+    
+
+  create  table "assignment"."assignment"."upload_census_g01_data__dbt_tmp"
+  
+  
+    as
+  
+  (
+    CREATE TABLE upload_census_g01_data (
+    LGA_CODE_2016 INT PRIMARY KEY,
+    Tot_P_M INT,
+    Tot_P_F INT,
+    Tot_P_P INT,
+    Age_0_4_yr_M INT,
+    Age_0_4_yr_F INT,
+    Age_0_4_yr_P INT,
+    Age_5_14_yr_M INT,
+    Age_5_14_yr_F INT,
+    Age_5_14_yr_P INT,
+    Age_15_19_yr_M INT,
+    Age_15_19_yr_F INT,
+    Age_15_19_yr_P INT,
+    Age_20_24_yr_M INT,
+    Age_20_24_yr_F INT,
+    Age_20_24_yr_P INT,
+    Age_25_34_yr_M INT,
+    Age_25_34_yr_F INT,
+    Age_25_34_yr_P INT,
+    Age_35_44_yr_M INT,
+    Age_35_44_yr_F INT,
+    Age_35_44_yr_P INT,
+    Age_45_54_yr_M INT,
+    Age_45_54_yr_F INT,
+    Age_45_54_yr_P INT,
+    Age_55_64_yr_M INT,
+    Age_55_64_yr_F INT,
+    Age_55_64_yr_P INT,
+    Age_65_74_yr_M INT,
+    Age_65_74_yr_F INT,
+    Age_65_74_yr_P INT,
+    Age_75_84_yr_M INT,
+    Age_75_84_yr_F INT,
+    Age_75_84_yr_P INT,
+    Age_85ov_M INT,
+    Age_85ov_F INT,
+    Age_85ov_P INT,
+    Counted_Census_Night_home_M INT,
+    Counted_Census_Night_home_F INT,
+    Counted_Census_Night_home_P INT,
+    Count_Census_Nt_Ewhere_Aust_M INT,
+    Count_Census_Nt_Ewhere_Aust_F INT,
+    Count_Census_Nt_Ewhere_Aust_P INT,
+    Indigenous_psns_Aboriginal_M INT,
+    Indigenous_psns_Aboriginal_F INT,
+    Indigenous_psns_Aboriginal_P INT,
+    Indig_psns_Torres_Strait_Is_M INT,
+    Indig_psns_Torres_Strait_Is_F INT,
+    Indig_psns_Torres_Strait_Is_P INT,
+    Indig_Bth_Abor_Torres_St_Is_M INT,
+    Indig_Bth_Abor_Torres_St_Is_F INT,
+    Indig_Bth_Abor_Torres_St_Is_P INT,
+    Indigenous_P_Tot_M INT,
+    Indigenous_P_Tot_F INT,
+    Indigenous_P_Tot_P INT,
+    Birthplace_Australia_M INT,
+    Birthplace_Australia_F INT,
+    Birthplace_Australia_P INT,
+    Birthplace_Elsewhere_M INT,
+    Birthplace_Elsewhere_F INT,
+    Birthplace_Elsewhere_P INT,
+    Lang_spoken_home_Eng_only_M INT,
+    Lang_spoken_home_Eng_only_F INT,
+    Lang_spoken_home_Eng_only_P INT,
+    Lang_spoken_home_Oth_Lang_M INT,
+    Lang_spoken_home_Oth_Lang_F INT,
+    Lang_spoken_home_Oth_Lang_P INT,
+    Australian_citizen_M INT,
+    Australian_citizen_F INT,
+    Australian_citizen_P INT,
+    Age_psns_att_educ_inst_0_4_M INT,
+    Age_psns_att_educ_inst_0_4_F INT,
+    Age_psns_att_educ_inst_0_4_P INT,
+    Age_psns_att_educ_inst_5_14_M INT,
+    Age_psns_att_educ_inst_5_14_F INT,
+    Age_psns_att_educ_inst_5_14_P INT,
+    Age_psns_att_edu_inst_15_19_M INT,
+    Age_psns_att_edu_inst_15_19_F INT,
+    Age_psns_att_edu_inst_15_19_P INT,
+    Age_psns_att_edu_inst_20_24_M INT,
+    Age_psns_att_edu_inst_20_24_F INT,
+    Age_psns_att_edu_inst_20_24_P INT,
+    Age_psns_att_edu_inst_25_ov_M INT,
+    Age_psns_att_edu_inst_25_ov_F INT,
+    Age_psns_att_edu_inst_25_ov_P INT,
+    High_yr_schl_comp_Yr_12_eq_M INT,
+);
+  );
+  
+[0m22:30:19.570694 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 12:     CREATE TABLE upload_census_g01_data (
+             ^
+
+[0m22:30:19.571682 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g01_data: ROLLBACK
+[0m22:30:19.811517 [debug] [Thread-1 (]: Timing info for model.your_project_name.upload_census_g01_data (execute): 22:30:15.933508 => 22:30:19.810778
+[0m22:30:19.812496 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g01_data: Close
+[0m22:30:19.816680 [debug] [Thread-1 (]: Database Error in model upload_census_g01_data (models/raw/upload_census_g01_data.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE upload_census_g01_data (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/upload_census_g01_data.sql
+[0m22:30:19.817629 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f0e3a50>]}
+[0m22:30:19.818740 [error] [Thread-1 (]: 17 of 18 ERROR creating sql table model assignment.upload_census_g01_data ...... [[31mERROR[0m in 3.89s]
+[0m22:30:19.819589 [debug] [Thread-1 (]: Finished running node model.your_project_name.upload_census_g01_data
+[0m22:30:19.820195 [debug] [Thread-1 (]: Began running node model.your_project_name.upload_census_g02_data
+[0m22:30:19.820900 [info ] [Thread-1 (]: 18 of 18 START sql table model assignment.upload_census_g02_data ............... [RUN]
+[0m22:30:19.821855 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.your_project_name.upload_census_g01_data, now model.your_project_name.upload_census_g02_data)
+[0m22:30:19.822364 [debug] [Thread-1 (]: Began compiling node model.your_project_name.upload_census_g02_data
+[0m22:30:19.824270 [debug] [Thread-1 (]: Writing injected SQL for node "model.your_project_name.upload_census_g02_data"
+[0m22:30:19.825187 [debug] [Thread-1 (]: Timing info for model.your_project_name.upload_census_g02_data (compile): 22:30:19.822686 => 22:30:19.824890
+[0m22:30:19.825682 [debug] [Thread-1 (]: Began executing node model.your_project_name.upload_census_g02_data
+[0m22:30:19.831032 [debug] [Thread-1 (]: Writing runtime sql for node "model.your_project_name.upload_census_g02_data"
+[0m22:30:19.831854 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.upload_census_g02_data"
+[0m22:30:19.832354 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g02_data: BEGIN
+[0m22:30:19.832857 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:30:22.233244 [debug] [Thread-1 (]: SQL status: BEGIN in 2.0 seconds
+[0m22:30:22.234304 [debug] [Thread-1 (]: Using postgres connection "model.your_project_name.upload_census_g02_data"
+[0m22:30:22.235207 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g02_data: /* {"app": "dbt", "dbt_version": "1.7.0", "profile_name": "assignment", "target_name": "dev", "node_id": "model.your_project_name.upload_census_g02_data"} */
+
+  
+    
+
+  create  table "assignment"."assignment"."upload_census_g02_data__dbt_tmp"
+  
+  
+    as
+  
+  (
+    CREATE TABLE upload_census_g02_data (
+    Median_age_persons INT,
+    Median_mortgage_repay_monthly DECIMAL(10, 2),
+    Median_tot_prsnl_inc_weekly DECIMAL(10, 2),
+    Median_rent_weekly DECIMAL(10, 2),
+    Median_tot_fam_inc_weekly DECIMAL(10, 2),
+    Average_num_psns_per_bedroom DECIMAL(5, 2),
+    Median_tot_hhd_inc_weekly DECIMAL(10, 2),
+    Average_household_size DECIMAL(5, 2)
+);
+  );
+  
+[0m22:30:22.540144 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "CREATE"
+LINE 12:     CREATE TABLE upload_census_g02_data (
+             ^
+
+[0m22:30:22.541090 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g02_data: ROLLBACK
+[0m22:30:22.848479 [debug] [Thread-1 (]: Timing info for model.your_project_name.upload_census_g02_data (execute): 22:30:19.826002 => 22:30:22.847697
+[0m22:30:22.849460 [debug] [Thread-1 (]: On model.your_project_name.upload_census_g02_data: Close
+[0m22:30:22.853780 [debug] [Thread-1 (]: Database Error in model upload_census_g02_data (models/raw/upload_census_g02_data.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE upload_census_g02_data (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/upload_census_g02_data.sql
+[0m22:30:22.854576 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d2b4ec6-3ed4-4f70-a3f8-346d6c5931a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f2649d0>]}
+[0m22:30:22.855358 [error] [Thread-1 (]: 18 of 18 ERROR creating sql table model assignment.upload_census_g02_data ...... [[31mERROR[0m in 3.03s]
+[0m22:30:22.856187 [debug] [Thread-1 (]: Finished running node model.your_project_name.upload_census_g02_data
+[0m22:30:22.858030 [debug] [MainThread]: Using postgres connection "master"
+[0m22:30:22.858509 [debug] [MainThread]: On master: BEGIN
+[0m22:30:22.858954 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:30:25.510028 [debug] [MainThread]: SQL status: BEGIN in 3.0 seconds
+[0m22:30:25.511037 [debug] [MainThread]: On master: COMMIT
+[0m22:30:25.511767 [debug] [MainThread]: Using postgres connection "master"
+[0m22:30:25.512467 [debug] [MainThread]: On master: COMMIT
+[0m22:30:25.817747 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:30:25.818915 [debug] [MainThread]: On master: Close
+[0m22:30:25.820500 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:30:25.821063 [debug] [MainThread]: Connection 'model.your_project_name.upload_census_g02_data' was properly closed.
+[0m22:30:25.821741 [info ] [MainThread]: 
+[0m22:30:25.822361 [info ] [MainThread]: Finished running 4 table models, 14 view models in 0 hours 1 minutes and 15.97 seconds (75.97s).
+[0m22:30:25.826535 [debug] [MainThread]: Command end result
+[0m22:30:25.838876 [info ] [MainThread]: 
+[0m22:30:25.839441 [info ] [MainThread]: [31mCompleted with 18 errors and 0 warnings:[0m
+[0m22:30:25.839897 [info ] [MainThread]: 
+[0m22:30:25.840352 [error] [MainThread]:   Database Error in model airbnb_listings (models/raw/airbnb_listings.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE airbnb_listings (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/airbnb_listings.sql
+[0m22:30:25.840899 [info ] [MainThread]: 
+[0m22:30:25.841453 [error] [MainThread]:   Database Error in model census_stg (models/staging/census_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE census_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/census_stg.sql
+[0m22:30:25.842004 [info ] [MainThread]: 
+[0m22:30:25.842630 [error] [MainThread]:   Database Error in model dim_census_g01 (models/warehouse/dim_census_g01.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_census_g01 (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_census_g01.sql
+[0m22:30:25.843186 [info ] [MainThread]: 
+[0m22:30:25.843805 [error] [MainThread]:   Database Error in model dim_census_g02 (models/warehouse/dim_census_g02.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_census_g02 (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_census_g02.sql
+[0m22:30:25.844555 [info ] [MainThread]: 
+[0m22:30:25.845168 [error] [MainThread]:   Database Error in model dim_host (models/warehouse/dim_host.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_host (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_host.sql
+[0m22:30:25.845834 [info ] [MainThread]: 
+[0m22:30:25.846545 [error] [MainThread]:   Database Error in model dim_lga (models/warehouse/dim_lga.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_lga (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_lga.sql
+[0m22:30:25.847686 [info ] [MainThread]: 
+[0m22:30:25.848263 [error] [MainThread]:   Database Error in model dim_property (models/warehouse/dim_property.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_property (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_property.sql
+[0m22:30:25.848780 [info ] [MainThread]: 
+[0m22:30:25.849434 [error] [MainThread]:   Database Error in model dim_suburb (models/warehouse/dim_suburb.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dim_suburb (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/dim_suburb.sql
+[0m22:30:25.849956 [info ] [MainThread]: 
+[0m22:30:25.850553 [error] [MainThread]:   Database Error in model dm_host_neighbourhood (models/datamart/dm_host_neighbourhood.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dm_host_neighbourhood (
+              ^
+  compiled Code at target/run/your_project_name/models/datamart/dm_host_neighbourhood.sql
+[0m22:30:25.851278 [info ] [MainThread]: 
+[0m22:30:25.851776 [error] [MainThread]:   Database Error in model dm_listing_neighbourhood (models/datamart/dm_listing_neighbourhood.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dm_listing_neighbourhood (
+              ^
+  compiled Code at target/run/your_project_name/models/datamart/dm_listing_neighbourhood.sql
+[0m22:30:25.852236 [info ] [MainThread]: 
+[0m22:30:25.852681 [error] [MainThread]:   Database Error in model dm_property_type (models/datamart/dm_property_type.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE dm_property_type (
+              ^
+  compiled Code at target/run/your_project_name/models/datamart/dm_property_type.sql
+[0m22:30:25.853125 [info ] [MainThread]: 
+[0m22:30:25.853573 [error] [MainThread]:   Database Error in model facts_listings (models/warehouse/facts_listings.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE facts_listings (
+              ^
+  compiled Code at target/run/your_project_name/models/warehouse/facts_listings.sql
+[0m22:30:25.854018 [info ] [MainThread]: 
+[0m22:30:25.854458 [error] [MainThread]:   Database Error in model lga_stg (models/staging/lga_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE lga_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/lga_stg.sql
+[0m22:30:25.854895 [info ] [MainThread]: 
+[0m22:30:25.855333 [error] [MainThread]:   Database Error in model lga_suburb_mapping (models/raw/lga_suburb_mapping.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE lga_suburb_mapping (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/lga_suburb_mapping.sql
+[0m22:30:25.855785 [info ] [MainThread]: 
+[0m22:30:25.856257 [error] [MainThread]:   Database Error in model property_stg (models/staging/property_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE property_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/property_stg.sql
+[0m22:30:25.856752 [info ] [MainThread]: 
+[0m22:30:25.857313 [error] [MainThread]:   Database Error in model suburb_stg (models/staging/suburb_stg.sql)
+  syntax error at or near "CREATE"
+  LINE 7:     CREATE TABLE suburb_stg (
+              ^
+  compiled Code at target/run/your_project_name/models/staging/suburb_stg.sql
+[0m22:30:25.857873 [info ] [MainThread]: 
+[0m22:30:25.858413 [error] [MainThread]:   Database Error in model upload_census_g01_data (models/raw/upload_census_g01_data.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE upload_census_g01_data (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/upload_census_g01_data.sql
+[0m22:30:25.858910 [info ] [MainThread]: 
+[0m22:30:25.859486 [error] [MainThread]:   Database Error in model upload_census_g02_data (models/raw/upload_census_g02_data.sql)
+  syntax error at or near "CREATE"
+  LINE 12:     CREATE TABLE upload_census_g02_data (
+               ^
+  compiled Code at target/run/your_project_name/models/raw/upload_census_g02_data.sql
+[0m22:30:25.860103 [info ] [MainThread]: 
+[0m22:30:25.860674 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=18 SKIP=0 TOTAL=18
+[0m22:30:25.863249 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 77.55856, "process_user_time": 4.253668, "process_kernel_time": 0.350184, "process_mem_max_rss": "122810368", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m22:30:25.864295 [debug] [MainThread]: Command `dbt run` failed at 22:30:25.864012 after 77.56 seconds
+[0m22:30:25.865195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e555a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e505ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e540f10>]}
+[0m22:30:25.865826 [debug] [MainThread]: Flushing usage events

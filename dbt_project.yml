@@ -1,0 +1,16 @@
+name: 'your_project_name'
+version: '1.0'
+config-version: 2
+
+profile: 'assignment'
+
+source-paths: ["models"]
+snapshot-paths: ["snapshots"]
+target-path: "target"  
+clean-targets: ["target", "dbt_modules"]  
+
+models:
+  your_project_name:
+    raw:
+      materialized: 'table'
+      snapshot_strategy: 'timestamp'
